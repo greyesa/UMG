@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Lato-BlackItalic";
+  src: url("webfont/Lato-BlackItalic.eot") format("embedded-opentype"),
+    url("webfont/Lato-BlackItalic.woff2") format("woff2"),
+    url("webfont/Lato-BlackItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato-LightItalic";
+  src: url("webfont/Lato-LightItalic.eot") format("embedded-opentype"),
+    url("webfont/Lato-LightItalic.woff2") format("woff2"),
+    url("webfont/Lato-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Urbanist-Bold";
+  src: url("webfont/Urbanist-Bold.eot") format("embedded-opentype"),
+    url("webfont/Urbanist-Bold.woff2") format("woff2"),
+    url("webfont/Urbanist-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Urbanist-Regular";
+  src: url("webfont/Urbanist-Regular.eot") format("embedded-opentype"),
+    url("webfont/Urbanist-Regular.woff2") format("woff2"),
+    url("webfont/Urbanist-Regular.woff") format("woff");
+}
+
+/* */
+
+body {
+  font-family: 'Urbanist-Regular', sans-serif;
+}
+
+/* */
