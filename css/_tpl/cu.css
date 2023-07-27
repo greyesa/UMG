@@ -32,23 +32,27 @@
   border-radius: 50%;
 }
 
-  .masthead h1 {
+.masthead h1 {
     color: #fff;
     font-family: "Lato-LightItalic", sans-serif;
-  }
-  
-  .masthead h1 label {
-    display: block;
-    font-family: "Lato-BlackItalic", sans-serif;
-    font-size: 2.4em;
+    font-size: 6.2em;
+    text-shadow: 3px 3px #000;
+    line-height: 71px;
   }
 
- 
+.masthead h1 label {
+  font-size: 1.4em;
+  line-height: 1;
+  display: block;
+  text-shadow: 3px 3px #000;
+  font-weight: 900;
+}
+
 
   h5 {
     text-align: left;
     position: relative;
-    font-size: 50px;
+    font-size: 65px;
     font-family: "Lato-BlackItalic", sans-serif;
     display: block;
     color: #003366;
@@ -66,8 +70,6 @@
     position: absolute;
   }
 
- 
-  
   .carreras h2 {
     color: #003366;
     font-family: "Lato-LightItalic", sans-serif;
@@ -76,7 +78,7 @@
   .carreras h2 label {
     display: block;
     font-family: "Lato-BlackItalic", sans-serif;
-    font-size: 2.4em;
+    font-size: 2.9em;
   }
 
   .carreras h4 {
@@ -92,7 +94,7 @@
   }
   
   @media (min-width: 576px) {
-  
+
     .carreras h1 {
       font-size: 36px;
     }
@@ -107,7 +109,7 @@
     }
   
     .carreras h2 label {
-      font-size: 49px;
+      font-size: 2.9em;
       line-height: 1;
     }
   
@@ -115,29 +117,16 @@
       font-size: 23px;
     }
 
-
-  
   }
   
   @media (min-width: 768px) {
-  
-    .masthead h1 {
-      color: #fff;
-      font-family: "Lato-LightItalic", sans-serif;
-    }
-    
-    .masthead h1 label {
-      display: block;
-      font-family: "Lato-BlackItalic", sans-serif;
-      font-size: 2.4em;
-    }
 
     .carreras h2 {
       font-size: 20px;
     }
   
     .carreras h2 label {
-      font-size: 49px;
+      font-size: 2.9em;
       line-height: 1;
     }
 
@@ -160,7 +149,7 @@
     }
   
     .carreras h2 label {
-      font-size: 49px;
+      font-size: 2.9em;
       line-height: 1;
     }
   
@@ -171,13 +160,13 @@
   }
   
   @media (min-width: 1200px) {
-  
+
     .carreras h1 label {
       font-size: 80px;
     }
 
     .carreras h2 label {
-      font-size: 49px;
+      font-size: 2.9em;
       line-height: 1;
     }
   
