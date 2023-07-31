@@ -59,14 +59,16 @@
   
  
   h5:after {
+    background-color: #0097ff;
     content: "";
-    display: block;
-    width: 70%;
+    display: inline-block;
     height: 1px;
-    background: #0097ff;
-    right: 0;
-    top: 60%;
-    position: absolute;
+    position: relative;
+    vertical-align: middle;
+    width: 70%;
+    left: 0.5em;
+    margin-right: -50%;
+   overflow: hidden;
   }
 
   .icons_service {
@@ -78,22 +80,21 @@
     text-align: left;
   }
 
-.py-4:hover .image {
-  opacity: 0.2%;
+.picture:link {
+  background-color: #0a53be;
+}
+
+.picture:hover {
+  opacity: 0.5%;
   background-color: #0a53be;
 }
 
 
-
 .image {
-  opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
   background-color: #0a53be;
-  width: 100%;
 }
 
   .carreras h2 {
