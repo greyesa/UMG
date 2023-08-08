@@ -13,7 +13,8 @@
     height: 100vh;
     min-height: 500px;
     /*background-image: -webkit-image-set(url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080') 1x);*/
-    background-image: -webkit-image-set(url('http://172.173.170.116/img/villa_nueva/villanueva.webp') 1x);
+    /*background-image: -webkit-image-set(url('http://172.173.170.116/img/villa_nueva/villanueva.webp') 1x);*/
+    background-image: -webkit-image-set(url('../../img/villa_nueva/villanueva.webp') 1x);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,6 +90,65 @@
   background-color: #0a53be;
 }
 
+
+.carousel-item .col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer; /* Agregamos un cursor de tipo puntero para indicar que la imagen es clickeable */
+}
+
+/* Estilo personalizado para el contenedor del carrusel */
+.carousel-container {
+  position: relative;
+}
+
+/* Estilo personalizado para las flechas de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 0; /* Quitamos el borde circular de las flechas */
+  color: white;
+  font-size: 24px;
+  width: 40px; /* Ajustar el ancho de las flechas */
+  height: 40px; /* Ajustar el alto de las flechas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* Cambiar el color de fondo de las flechas a transparente */
+  border-bottom: 0; /* Quitamos la línea de abajo de las flechas */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+/* Estilo personalizado para los íconos de las flechas */
+.carousel-control-prev-icon::before {
+  content: "❮"; /* Símbolo para la flecha izquierda */
+}
+
+.carousel-control-next-icon::before {
+  content: "❯"; /* Símbolo para la flecha derecha */
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.modal-content {
+  width: 90% !important;
+}
 
 .image {
   display: block;

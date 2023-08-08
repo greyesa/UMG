@@ -12,7 +12,8 @@ p.text-x2 {
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background-image: -webkit-image-set(url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080') 1x);
+    /*background-image: -webkit-image-set(url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080') 1x);*/
+    background-image: -webkit-image-set(url('../../img/random-background.jpeg') 1x);
    /*background-image: -webkit-image-set(url('http://172.173.170.116/img/villa_nueva/villanueva.webp') 1x); */
     background-size: cover;
     background-position: center;
@@ -53,27 +54,56 @@ h5 {
     position: relative;
     font-size: 65px;
     font-family: "Lato-BlackItalic", sans-serif;
-    display: block;
     color: #003366;
+    font-weight: 100;
+    margin-bottom: 45px;
 }
 
-
-h5:after {
-    background-color: #0097ff;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 70%;
-    left: 0.5em;
-    margin-right: -50%;
-    overflow: hidden;
+h5 label {
+    font-weight: 100;
 }
+
+h2 {
+    background-color: #13719c;
+    color: #fff;
+    margin: -25px;
+    min-height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 
 .icons_service {
     margin: auto;
 }
+
+.block_service {
+    background-color: #fff;
+    border: 1px solid #efefef;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 25px;
+    min-height: 350px;
+    vertical-align: text-top;
+    margin-bottom: 20px;
+}
+
+.list_service {
+    text-align: left; 
+    margin-top: 50px;
+}
+
+.banner::after {
+    background: url("../../img/forma-banner.svg");
+    background-position: bottom;
+    background-size: 100% 100%;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    }
 
 .contacto_info {
     padding: 40px;
@@ -198,6 +228,9 @@ h5:after {
     }
 
 }
+
+
+
 
 /* */
 
