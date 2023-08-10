@@ -76,6 +76,27 @@
     margin: auto;
   }
 
+  .banner::after {
+    background: url("../../img/forma_portada.svg");
+    background-position: bottom;
+    background-size: 100% 100%;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 320px;
+    position: absolute;
+    width: 100%;
+    }
+
+    .banner h1 {
+      color: #fff;
+      font-family: "Lato-LightItalic", sans-serif;
+      font-size: 6.2em;
+      text-shadow: 3px 3px #000;
+      line-height: 71px;
+      position: relative;
+    }
+
   .contacto_info {
     padding: 40px;
     text-align: left;
@@ -155,6 +176,10 @@
   width: 100%;
   height: auto;
   background-color: #0a53be;
+}
+
+.carreras {
+  padding-top: 0px;
 }
 
   .carreras h2 {

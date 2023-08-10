@@ -71,6 +71,7 @@ h2 {
     align-items: center;
     display: flex;
     justify-content: center;
+    font-size: 1.7em;
 }
 
 
@@ -126,6 +127,11 @@ h2 {
     height: auto;
     background-color: #0a53be;
 }
+
+.py-4 {
+    padding-top: 5rem!important;
+    padding-bottom: 1.5rem!important;
+    }
 
 .carreras h2 {
     color: #003366;
@@ -237,6 +243,7 @@ h2 {
 section.s {
     background: #003366;
     color: #fff;
+    margin-top: 50px;
 }
 
 section.s h5 {
