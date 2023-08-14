@@ -3,10 +3,16 @@
     src: url("../../webfont/WhiteDream.eot") format("embedded-opentype"),
     url("../../webfont/WhiteDream.woff2") format("woff2"),
     url("../../webfont/WhiteDream.woff") format("woff");
+    font-style: normal;
+    font-weight: 100;
 }
 
 p.text-x2 {
     font-size: 20px;
+}
+
+.text-center {
+    font-weight: normal;
 }
 
 .masthead {
@@ -42,6 +48,7 @@ p.text-x2 {
 }
 
 .masthead h1 label {
+    font-family: "Lato-LightItalic", sans-serif;
     font-size: 1.4em;
     line-height: 1;
     display: block;
@@ -57,6 +64,7 @@ h5 {
     color: #003366;
     font-weight: 100;
     margin-bottom: 45px;
+    font-weight: lighter;
 }
 
 h5 label {
@@ -65,6 +73,7 @@ h5 label {
 
 h2 {
     background-color: #13719c;
+    font-family: "Lato-BlackItalic", sans-serif;
     color: #fff;
     margin: -25px;
     min-height: 80px;
@@ -72,8 +81,13 @@ h2 {
     display: flex;
     justify-content: center;
     font-size: 1.7em;
+    padding: 10px;
+    font-weight: lighter;
 }
 
+h2 label {
+    font-weight: normal;
+}
 
 .icons_service {
     margin: auto;
@@ -81,8 +95,8 @@ h2 {
 
 .block_service {
     background-color: #fff;
-    border: 1px solid #efefef;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    border: 0px;
     padding: 25px;
     min-height: 350px;
     vertical-align: text-top;
@@ -92,7 +106,21 @@ h2 {
 .list_service {
     text-align: left; 
     margin-top: 50px;
+    font-family: 'Urbanist-Regular';
+    font-size: 1.1em;
+    color: #333;
 }
+
+.card {
+   box-shadow: 0px 0px 0px grey;
+    -webkit-transition:  box-shadow .4s ease-out;
+       box-shadow: .0px .2px 2px grey;
+  }
+
+  .card:hover{ 
+       box-shadow: 1px 8px 20px grey;
+      -webkit-transition:  box-shadow .4s ease-in;
+    }
 
 .banner::after {
     background: url("../../img/forma-banner.svg");
@@ -101,7 +129,7 @@ h2 {
     bottom: 0px;
     content: "";
     display: block;
-    height: 100px;
+    height: 30px;
     position: absolute;
     width: 100%;
     }
@@ -129,7 +157,7 @@ h2 {
 }
 
 .py-4 {
-    padding-top: 5rem!important;
+    padding-top: 0rem!important;
     padding-bottom: 1.5rem!important;
     }
 
@@ -232,6 +260,10 @@ h2 {
         font-size: 2.9em;
         line-height: 1;
     }
+
+    .banner::after {
+        height: 100px;
+        }
 
 }
 
