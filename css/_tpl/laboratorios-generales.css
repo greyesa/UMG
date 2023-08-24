@@ -1,0 +1,365 @@
+/*Ocultar la barra de desplazamiento Horizontal*/
+html, body{
+
+}
+
+@font-face {
+    font-family: "White Dream";
+    src: url("../../webfont/WhiteDream.eot") format("embedded-opentype"),
+    url("../../webfont/WhiteDream.woff2") format("woff2"),
+    url("../../webfont/WhiteDream.woff") format("woff");
+}
+
+.formulario-container {
+    padding: 50px;
+    background-color: #a6e1ee;
+    color: #003468;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.formulario-container h2 {
+    font-size: 65px;
+    font-family: "Lato-BlackItalic", sans-serif;
+}
+
+.formulario-container h2 label {
+    font-size: 65px;
+
+    font-family: "Lato-LightItalic";
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    padding: 1.25rem;
+    color: #00316b;
+    text-align: left;
+    width: 100%;
+    background-color: #2fceff;
+    font-size: 2.0rem;
+    min-height: 100px;
+
+}
+
+.titulo-imagen-short {
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 20%;
+    color: transparent;
+    padding: 1.25rem;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: white;
+    font-size: 2.9rem;
+    /*text-align: left;*/
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.titulo-imagen-large {
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 30%;
+    color: transparent;
+    padding: 1.25rem;
+    -webkit-text-stroke-width: 1px ;
+    -webkit-text-stroke-color: white;
+    font-size: 2.9rem;
+    /*text-align: left;*/
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+/*Sección del texto dentro del banner*/
+
+
+.umg-label {
+    font-weight: bold;
+    color: #00acff
+}
+
+/* Estilos para el texto dentro del banner */
+.texto {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.texto h1 {
+    margin: 0;
+    padding: 0;
+    color: #00316b;
+    font-family: "Lato-BlackItalic";
+    font-size: 2.0em;
+}
+
+.container .btn
+{
+    background-color: #47bbfc;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.container .btn:hover{
+    background-color: #3b83f9;
+}
+
+
+.banner::after {
+    background: url("../../img/forma-laboratorios.png");
+    background-position: bottom;
+    background-size: 100% 100%;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 95px;
+    position: absolute;
+    width: 100%;
+}
+
+/*Responsive*/
+/*576*/
+@media (min-width: 576px)
+{
+
+    .titulo-imagen-large {
+        top: 63%;
+        left: 30%;
+        padding: 1.25rem;
+        font-size: 2.9rem;
+    }
+
+    .titulo-imagen-short {
+        top: 63%;
+        left: 20%;
+        padding: 1.25rem;
+        font-size: 2.9rem;
+    }
+
+    .texto h1 {
+        margin: 0;
+        padding: 0;
+        color: #00316b;
+        font-family: "Lato-BlackItalic";
+        font-size: 2.0em;
+    }
+
+    .texto {
+        position: absolute;
+        top: 25%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /*contador*/
+    .contador h1 {
+        font-size: 36px;
+    }
+
+    .contador h1 label {
+        font-size: 51px;
+        line-height: 1;
+    }
+
+    .contador h2 {
+        font-size: 20px;
+    }
+
+    .contador h2 label {
+        font-size: 2.9em;
+        line-height: 1;
+    }
+
+    .contador h4 {
+        font-size: 23px;
+    }
+
+}
+/*768*/
+@media (min-width: 768px)
+{
+
+    .titulo-imagen-large {
+        top: 58%;
+        left: 30%;
+        padding: 1.25rem;
+        font-size: 2.9rem;
+    }
+
+    .titulo-imagen-short {
+        top: 58%;
+        left: 20%;
+        padding: 1.25rem;
+        font-size: 2.9rem;
+    }
+
+    .texto h1 {
+        margin: 0;
+        padding: 0;
+        color: #00316b;
+        font-family: "Lato-BlackItalic";
+        font-size: 3.0em;
+    }
+
+    .texto {
+        position: absolute;
+        top: 40%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /*contador*/
+    .contador h2 {
+        font-size: 20px;
+    }
+
+    .contador h2 label {
+        font-size: 1.8em;
+        line-height: 1;
+    }
+
+    .datos-LaboratorioComputo{
+        border-right: 1px solid #0097ff;
+        height: 110px;
+    }
+
+}
+/*992*/
+@media (min-width: 992px)
+{
+
+    .titulo-imagen-large {
+        top: 74%;
+        left: 30%;
+        padding: 1.25rem;
+        font-size: 3.9rem;
+    }
+
+    .titulo-imagen-short {
+        top: 74%;
+        left: 20%;
+        padding: 1.25rem;
+        font-size: 3.9rem;
+    }
+
+    .texto h1 {
+        margin: 0;
+        padding: 0;
+        color: #00316b;
+        font-family: "Lato-BlackItalic";
+        font-size: 4.0em;
+    }
+
+    .texto {
+        position: absolute;
+        top: 45%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /*contador*/
+    .contador h1 {
+        font-size: 53px;
+    }
+
+    .contador h1 label {
+        font-size: 70px;
+    }
+
+    .contador h2 {
+        font-size: 20px;
+    }
+
+    .contador h2 label {
+        font-size: 2.9em;
+        line-height: 1;
+    }
+
+    .contador h4 {
+        font-size: 20px;
+    }
+
+}
+/*1200*/
+@media (min-width: 1200px)
+{
+
+    .titulo-imagen-large {
+        top: 80%;
+        left: 30%;
+        padding: 1.25rem;
+        font-size: 4.9rem;
+    }
+    .titulo-imagen-short {
+        top: 80%;
+        left: 20%;
+        padding: 1.25rem;
+        font-size: 4.9rem;
+    }
+
+    .texto h1 {
+        margin: 0;
+        padding: 0;
+        color: #00316b;
+        font-family: "Lato-BlackItalic";
+        font-size: 4.0em;
+    }
+
+    .texto {
+        position: absolute;
+        top: 55%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .contador h1 label {
+        font-size: 80px;
+    }
+
+    .contador h2 label {
+        font-size: 2.9em;
+        line-height: 1;
+    }
+    /*
+          .datos-LaboratorioComputo::after {
+            border-right: 1px solid #0097ff;
+            content: '';
+            height: 70px;
+            width: 300px;
+            position: absolute;
+            top: 21px;
+            z-index: 1;
+          } */
+
+
+}
+/*1400*/
+@media (min-width: 1400px)
+{
+
+}
+/*1800*/
+@media (min-width: 1800px)
+{
+    /*Sección del texto dentro del banner*/
+    .container .texto{
+        margin-left: 0;
+    }
+
+    .display-2 {
+        font-size: 5.5rem;
+    }
+
+
+
+}
