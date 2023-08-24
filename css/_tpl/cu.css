@@ -57,30 +57,49 @@
     text-align: left;
     position: relative;
     font-size: 65px;
-    font-family: "Lato-BlackItalic", sans-serif;
+    font-family: "Lato-LightItalic";
     display: block;
     color: #003366;
     padding-top: 10px;
   }
-  
- 
-  h5:after {
-    background-color: #0097ff;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 70%;
-    left: 0.5em;
-    margin-right: -50%;
-   overflow: hidden;
-  }
+
+h5 label {
+  font-family: "Lato-BlackItalic", sans-serif;
+}
+
+.carreras:after {
+  background-color: #0097ff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 70%;
+  left: 0.5em;
+  margin-right: -50%;
+  overflow: hidden;
+}
 
   .icons_service {
     margin: auto;
   }
 
+<<<<<<< HEAD
+.d360{
+  min-height: 300px !important;
+}
+
+.service-txt {
+ color: #0097ff;
+  margin-top: 25px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  min-height: 0px;
+  line-height: 20px;
+}
+
+=======
+>>>>>>> 0740586a299a63c187ff06aa5f0644071bf1bf42
   .contacto_info {
     padding: 40px;
     text-align: left;
@@ -101,6 +120,41 @@
   margin-bottom: 80px;
 }
 
+<<<<<<< HEAD
+.TourVirtual ul {
+  column-gap: calc( var(--bs-gutter-x) * .5);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: calc( var(--bs-gutter-x) * .5);
+}
+
+.TourVirtual a::before {
+  content: url("../../img/tour/360.svg");
+  display: block;
+  left: 50%;
+  position: absolute;
+  opacity: .5;
+  top: 50%;
+  transform: translateX(-50%) translateY(-30%);
+  transition: .5s;
+  width: 25%;
+}
+
+.TourVirtual a:hover::before {
+  opacity: 1;
+}
+
+.TourVirtual a label {
+  cursor: pointer;
+  font-family: "Lato-BlackItalic";
+  font-size: 7.5vw;
+  line-height: 1;
+}
+
+.TourVirtual a label span {
+  font-family: "Lato-LightItalic";
+}
+=======
+>>>>>>> 0740586a299a63c187ff06aa5f0644071bf1bf42
 
 .datos-carrera:after {
   border-right: none;
@@ -535,7 +589,11 @@
   section.s {
     background: #003366;
     color: #fff;
+<<<<<<< HEAD
+    margin-bottom: 0px;
+=======
     margin-bottom: 50px;
+>>>>>>> 0740586a299a63c187ff06aa5f0644071bf1bf42
   }
 
   section.s h5 {

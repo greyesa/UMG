@@ -474,8 +474,11 @@
     </li>
   </ul>
 </div>
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 0740586a299a63c187ff06aa5f0644071bf1bf42
 
 
       <section class="carreras">
@@ -504,7 +507,7 @@
 
             <div class="row">
               <div class="col-12">
-                <h5>
+                <h5 class="carreras">
                   Carreras
                 </h5>
               </div>
@@ -659,6 +662,7 @@
           </div>
         </div>
       </section>
+
       <section class="s">
         <div class="container py-4 py-md-5">
           <div class="row text-center">
@@ -715,18 +719,33 @@
         </div>
       </section>
 
-      <section class="py-4 text-center">
-        <div class="container">
-
+      <section class="TourVirtual text-center">
+        <div class="container-fliud">
           <div class="row">
-            <div class="col-12 mt-2 mb-3">
-             <picture>
-              <img src="img/villa_nueva/villa_nueva_tour.webp" style="width: 100%;" alt="Villa Nueva">
-             </picture>
+            <div class="col-12">
+             <a href="#" class="d-block position-relative">
+              <img src="img/villa_nueva/villa_nueva_tour.webp" class="img-fluid" alt="Villa Nueva">
+             </a>
             </div>
           </div>
         </div>
       </section>
+
+<<<<<<< HEAD
+     <!-- <section class="py-4 text-center">
+=======
+      <section class="Aula  py-4 text-center">
+>>>>>>> 0740586a299a63c187ff06aa5f0644071bf1bf42
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mt-2 mb-3">
+              <picture>
+                <img src="img/villa_nueva/villa_nueva_tour.webp" style="width: 100%;" alt="Villa Nueva">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>-->
 
       <section class="Aula  py-4 text-center">
         <div class="container">
@@ -752,7 +771,11 @@
                   <span class="btn"></span>
                 </a>
               </div>
+<<<<<<< HEAD
+
+=======
              
+>>>>>>> 0740586a299a63c187ff06aa5f0644071bf1bf42
             </div>
 
           <!-- <div class="row">
@@ -823,9 +846,12 @@
 
         <!-- Flechas de navegación -->
 
+<<<<<<< HEAD
+=======
 
 
         
+>>>>>>> 0740586a299a63c187ff06aa5f0644071bf1bf42
         <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">&lt;</span>
@@ -842,12 +868,23 @@
 
     <script>
       function showFullScreen(imageSrc) {
+
+        if (imageSrc == "img/villa_nueva/villa_nueva_laboratorio1.webp") {
+          lab = "Cómputo";
+        } else if(imageSrc == "img/villa_nueva/villa_nueva_laboratorio2.webp") {
+          lab = "Arquitectura";
+        }
+        else {
+          lab = "x";
+        }
+
         const modal = `
           <div class="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
               <div class="modal-content">
                 <div class="modal-body">
                   <img src="${imageSrc}" class="img-fluid" alt="Imagen a pantalla completa">
+                 <br><br><p>Detalle: Laboratorio de ${lab}.</p>
                 </div>
               </div>
             </div>
@@ -881,42 +918,50 @@
              <picture>
               <img src="img/villa_nueva/iconos/parqueo.svg" style="width: 100%;" alt="Villa Nueva">
              </picture>
+              <p class="service-txt">Parqueo</p>
             </div>
             <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
                <img src="img/villa_nueva/iconos/cajero.svg" style="width: 100%;" alt="Villa Nueva">
-              </picture>
+              </picture><br>
+              <p class="service-txt">Cajero</p>
              </div>
 
              <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
                <img src="img/villa_nueva/iconos/biblioteca.svg" style="width: 100%;" alt="Villa Nueva">
               </picture>
+               <p class="service-txt">Biblioteca</p>
              </div>
              <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
                <img src="img/villa_nueva/iconos/cafeteria.svg" style="width: 100%;" alt="Villa Nueva">
               </picture>
+               <p class="service-txt">Cafetería</p>
              </div>
              <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
                <img src="img/villa_nueva/iconos/laboratorios.svg" style="width: 100%;" alt="Villa Nueva">
               </picture>
+               <p class="service-txt">Laboratorios</p>
              </div>
              <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
                <img src="img/villa_nueva/iconos/odontologia.svg" style="width: 100%;" alt="Villa Nueva">
               </picture>
+               <p class="service-txt">Clínica Odontológica</p>
              </div>
              <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
                <img src="img/villa_nueva/iconos/psicologia.svg" style="width: 100%;" alt="Villa Nueva">
               </picture>
+               <p class="service-txt">Clínica de Psicología</p>
              </div>
              <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
                <img src="img/villa_nueva/iconos/bufete.svg" style="width: 100%;" alt="Villa Nueva">
               </picture>
+               <p class="service-txt">Bufete Popular</p>
              </div>
 
           </div>
@@ -930,18 +975,18 @@
           <div class="row">
             <div class="col-12">
               <h5>
-                <label>Contacto</label>
+                &nbsp; Datos  <br> <label>de contacto</label>
               </h5>
             </div>
           </div>
 
           
           <div class="row">
-            <div class="col-6 contacto_info">
-             <h4>Villa Nueva</h4>
+            <div class="col-6 contacto_info" style="border-right: 1px solid #2c557d;">
+             <h4 style="color: #982f2e;">Villa Nueva</h4>
              <p>Villa Nueva, Guatemala, carretera Antigua a Amatitlán,<br> KM 20.5, zona 10 Villa Nueva.<br> PBX: 79640500. <a href="mailto:villanueva@umg.edu.gt">villanueva@umg.edu.gt</a></p>
             </div>
-            <div class="col-6 contacto_info">
+            <div class="col-6 contacto_info" style="padding-left: 50px;">
              <br><p><strong>Horarios:</strong> Lunes a viernes de 07:00 a 19:00 horas. <br>Sábado de 06:00 a 17:00 horas. <br>Domingo de 07:00 a 16:00 horas.</p>
              </div>
           </div>
