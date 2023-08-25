@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 @font-face {
     font-family: "White Dream";
     src: url("../../webfont/WhiteDream.eot") format("embedded-opentype"),
@@ -7,9 +11,11 @@
   
   p.text-x2 {
     font-size: 20px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 90px;
     color: #4d4d4d;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .masthead {
@@ -38,7 +44,7 @@
 
 .masthead h1 {
     color: #fff;
-    font-family: "Lato-LightItalic", sans-serif;
+    font-family: "Lato-BlackItalic", sans-serif;
     font-size: 5.0em;
     text-shadow: 3px 3px #000;
     line-height: 71px;
@@ -50,6 +56,7 @@
   line-height: 1;
   display: block;
   text-shadow: 3px 3px #000;
+  font-family: "Lato-LightItalic";
   font-weight: 900;
 }
 
@@ -57,36 +64,54 @@
     text-align: left;
     position: relative;
     font-size: 65px;
-    font-family: "Lato-LightItalic";
+    font-family: "Lato-BlackItalic", sans-serif;
     display: block;
     color: #003366;
-    padding-top: 10px;
+    
   }
 
 h5 label {
-  font-family: "Lato-BlackItalic", sans-serif;
+  font-family: "Lato-LightItalic";
 }
 
-.carreras:after {
-  background-color: #0097ff;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 70%;
-  left: 0.5em;
-  margin-right: -50%;
-  overflow: hidden;
+
+.contacto-footer h4 {
+  color: #982f2e; 
+  font-weight: bold;
+}
+
+.contacto-footer h5 {
+  line-height: 54.2px;
+}
+
+.contacto-footer p {
+  color: #043665;
+}
+
+.contacto-footer a {
+  color: #043665;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.title-container {
+  display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.title {
+  margin-right: 20px; /* Espacio entre el título y la línea */
+}
+
+.line {
+  flex: 1; /* Expande la línea para ocupar el espacio restante */
+  height: 2px; /* Grosor de la línea */
+  background-color: #54B9FF; /* Color de la línea */
 }
 
   .icons_service {
     margin: auto;
   }
-
-.d360{
-  min-height: 300px !important;
-}
 
 .service-txt {
  color: #0097ff;
@@ -113,8 +138,13 @@ h5 label {
 
 .carreras {
   position: relative;
-  margin-top: -95px;
-  margin-bottom: 80px;
+  margin-top: -40px;
+  margin-bottom: 105px;
+}
+
+.TourVirtual {
+  height: 600px; /* Define la altura deseada para recortar */
+  overflow: hidden; /* Oculta el contenido que se sale del contenedor */
 }
 
 .TourVirtual ul {
@@ -129,10 +159,10 @@ h5 label {
   left: 50%;
   position: absolute;
   opacity: .5;
-  top: 50%;
+  top: 30%;
   transform: translateX(-50%) translateY(-30%);
   transition: .5s;
-  width: 25%;
+  width: 18%;
 }
 
 .TourVirtual a:hover::before {
@@ -318,6 +348,11 @@ h5 label {
     height: 40px;
   }
 
+  .TourVirtual {
+    height: 600px; /* Define la altura deseada para recortar */
+    overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -341,6 +376,11 @@ h5 label {
     width: 40px;
   }
 
+  .TourVirtual {
+    height: 600px; /* Define la altura deseada para recortar */
+    overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -349,6 +389,11 @@ h5 label {
     height: 30px;
     font-size: initial;
     width: 30px;
+  }
+
+  .TourVirtual {
+    height: 600px; /* Define la altura deseada para recortar */
+    overflow: hidden; /* Oculta el contenido que se sale del contenedor */
   }
 
 }
@@ -572,6 +617,11 @@ h5 label {
       z-index: 1;
     }
   
+    .TourVirtual {
+      height: 950px; /* Define la altura deseada para recortar */
+      overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+    }
+
   }
   
   /* */

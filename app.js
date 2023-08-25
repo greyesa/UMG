@@ -1,56 +1,61 @@
 (function() {
   'use strict';
 
-  var navbar = $('header .navbar');
+  const navbar = $('header .navbar');
 
-  function stickyNavbar() {
-    var scroll = $(window).scrollTop();
-    
-    if (scroll < 1)
-      navbar.removeClass(['sticky', 'show']);
+  function colorizeNavbar() {
+    const scrollTop = $(window).scrollTop();
+
+    if ( scrollTop < 1)
+      navbar.addClass('bg-transparent');
     else
-      navbar.addClass('sticky');
+      navbar.removeClass('bg-transparent');
   }
 
-  $(window).on('scroll', stickyNavbar);
-  $(document).ready(stickyNavbar);
+  $(window).on('scroll', colorizeNavbar);
+  $(document).ready(colorizeNavbar).ready(function() {
+    
+    if ( $(window).scrollTop() > 0)
+      navbar.removeClass('mt-0')
+  });
 
   //
 
   $(window).on('wheel', function(evt) {
-    if (evt.originalEvent.wheelDelta <= 0)
-      navbar.addClass(['scrollDown', 'sticky'])
+    if ( evt.originalEvent.wheelDelta <= 0)
+      navbar.removeClass('mt-0');
     else
-      navbar.removeClass('scrollDown');
-  });
-
-  $(window).on('touchstart', function(evt) {
+      navbar.addClass('mt-0');
+  
+  }).on('touchstart', function(evt) {
     this.startY = evt.touches[0].clientY;
-  });
+  
+  }).on('touchmove', function(evt) {
+    const currentY = evt.touches[0].clientY;
 
-  $(window).on('touchmove', function(evt) {
-    const currentDelta = evt.touches[0].clientY;
-
-    if (currentDelta < this.startY)
-      navbar.addClass(['scrollDown', 'sticky']);
+    if ( currentY <= startY)
+      navbar.removeClass('mt-0');
     else
-      navbar.removeClass('scrollDown');
+      navbar.addClass('mt-0');
   });
 
   //
 
-  const querySelector = '#navbar_Umg .dropdown';
-  //const navbar = $('header .navbar');
-
-  var elem = $(querySelector);
-  
-  elem.on('show.bs.dropdown', function () {
+  $('#navbar_Umg .dropdown').on('show.bs.dropdown', function() {
     navbar.addClass('show');
+
+  }).on('hide.bs.dropdown', function() {
+    
+    if ( $('#navbar_Umg .dropdown-menu.show').length == 1)
+      navbar.removeClass('show');
   });
 
-  elem.on('hide.bs.dropdown', function () {
-    if ( $(querySelector + '.show').length == 1) 
-      navbar.removeClass('show');
+  $('#navbar_Umg').on('show.bs.collapse', function() {
+    navbar.addClass('collapse-show');
+
+  }).on('hide.bs.collapse', function() {  
+    navbar.removeClass('collapse-show');
+    
   });
 
 })();

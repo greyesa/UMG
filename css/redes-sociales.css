@@ -1,0 +1,101 @@
+.redes-sociales {
+  left: 10px;
+  transition: .5s;
+  top: 0;
+  width: 40px;
+  z-index: 2;
+}
+
+.redes-sociales a {
+  border-radius: 100%;
+  color: #fff;
+  height: 35px;
+  transition: .5s;
+  width: 35px;
+}
+
+.redes-sociales a:hover {
+  background-color: #fff;
+  transform: scale(1.3);
+}
+
+.redes-sociales .fi {
+  font-size: 1.325rem;
+  line-height: 1.325rem;
+  margin-top: .2pc;
+}
+
+.redes-sociales .fi-brands-linkedin {
+  margin-left: 3px;
+}
+
+.redes-sociales a:hover .fi-brands-linkedin {
+  color: #0a66c2;
+}
+
+.redes-sociales .fi-brands-facebook {
+  margin-left: .5px;
+}
+
+.redes-sociales a:hover .fi-brands-facebook {
+  color: #4267b2;
+}
+
+.redes-sociales .fi-brands-youtube {
+  margin-left: .5px;
+}
+
+.redes-sociales a:hover .fi-brands-youtube {
+  color: #ff0000;
+}
+
+.redes-sociales a:hover .fi-brands-instagram {
+  color: #fd1d1d;
+}
+
+.redes-sociales .fi-brands-twitter {
+  margin-top: .25pc;
+}
+
+.redes-sociales a:hover .fi-brands-twitter {
+  color: #00acee;
+}
+
+.redes-sociales a:hover .fi-brands-tik-tok {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+
+  .redes-sociales {
+    left: 15px;
+  }
+
+  .redes-sociales a {
+    height: 40px;
+    width: 40px;
+  }
+
+  .redes-sociales .fi {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    margin-top: .4pc;
+  }
+
+  .redes-sociales a:hover .fi {
+    margin-top: .2pc;
+  }
+
+  .redes-sociales .fi-brands-instagram {
+    margin-left: 1px
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .redes-sociales {
+    left: 30px;
+  }
+
+}

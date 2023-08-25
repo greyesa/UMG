@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilo base para los enlaces */
+        .lista-vinetas {
+            list-style-type: none; /* Quitar las viñetas predeterminadas */
+            padding: 0;
+        }
+
+        .lista-vinetas li {
+            margin-bottom: 10px; /* Espacio entre elementos de la lista */
+        }
+
+        .lista-vinetas a {
+            display: inline-block; /* Mantener los enlaces en línea */
+            padding: 10px;
+            text-decoration: none;
+            color: #000; /* Color de texto predeterminado */
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: color 0.3s, background-color 0.3s; /* Transiciones de color */
+        }
+
+        .lista-vinetas a::before {
+            content: "";
+            position: absolute;
+            top: 100%; /* Inicialmente oculto en la parte inferior */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2; /* Color del fondo */
+            transition: top 0.3s; /* Animación de transición */
+            z-index: -1;
+        }
+
+        .lista-vinetas a:hover::before, .lista-vinetas a:focus::before {
+            top: 0; /* Mostrar el fondo al pasar el mouse o estar seleccionado */
+        }
+
+        .lista-vinetas a:hover, .lista-vinetas a:focus {
+            color: #fff; /* Cambiar el color del texto al seleccionar el enlace */
+            background-color: #ff0000; /* Cambiar el color de fondo al pasar el mouse o al estar seleccionado */
+        }
+    </style>
+    <title>Lista con Efecto de Fondo y Cambio de Color del Texto</title>
+</head>
+<body>
+    <ul class="lista-vinetas">
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+        <!-- Agrega más elementos de lista si es necesario -->
+    </ul>
+</body>
+</html>

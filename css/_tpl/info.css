@@ -63,8 +63,8 @@ h5 {
     font-family: "Lato-BlackItalic", sans-serif;
     color: #003366;
     font-weight: 100;
-    margin-bottom: 45px;
-
+    margin-bottom: 85px;
+    margin-top: 80px;
 }
 
 h5 label {
@@ -102,7 +102,6 @@ h2 label {
 
 .block_service {
     background-color: #fff;
-    
     border: 0px;
     padding: 25px;
     min-height: 350px;
@@ -118,14 +117,15 @@ h2 label {
     color: #333;
 }
 
-.card {
+.card-service {
    box-shadow: 0px 0px 0px grey;
     -webkit-transition:  box-shadow .4s ease-out;
     box-shadow: .0px .2px 2px grey;
-    min-height: 400px;
+    min-height: 450px;
   }
 
-  .card:hover{ 
+
+  .card-service:hover{ 
        box-shadow: 1px 8px 20px grey;
       -webkit-transition:  box-shadow .4s ease-in;
     }
@@ -156,6 +156,56 @@ h2 label {
     background-color: #0a53be;
 }
 
+.lista-vinetas {
+    list-style-type: none; /* Quitar las viñetas predeterminadas */
+    padding: 0;
+}
+
+.lista-vinetas li {
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Alinear verticalmente los elementos */
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
+.lista-vinetas li::before {
+    content: "\2022"; /* Viñeta redonda */
+    font-size: 20px; /* Tamaño de la viñeta */
+    margin-right: 10px; /* Espacio entre la viñeta y el enlace */
+}
+
+.lista-vinetas a {
+    flex: 1; /* Expandir para ocupar el espacio restante */
+    display: inline-block; /* Mantener los enlaces en línea */
+    position: relative; /* Posición relativa para alinear el fondo */
+    padding: 5px;
+    text-decoration: none;
+    overflow: hidden; /* Ocultar el exceso de fondo */
+    color: #4d4d4d;
+}
+
+
+/* Efecto de fondo desde abajo */
+.lista-vinetas a::before {
+    content: ''; /* Agregar un pseudo-elemento para el fondo */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #f2f2f2; /* Color del fondo */
+    transition: height 0.3s; /* Animación de transición */
+    z-index: 2;
+}
+
+.lista-vinetas a:link, a:hover, .lista-vinetas a:focus {
+    color: #333; /* Cambiar el color del texto al seleccionar el enlace */
+    z-index: 1;
+}
+
+/* Efecto de fondo cuando se pasa el mouse por encima */
+.lista-vinetas a:hover::before {
+    height: 100%; /* Ajustar la altura para revelar el fondo */
+}
 
 .image {
     display: block;
