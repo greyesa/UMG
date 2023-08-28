@@ -434,7 +434,13 @@
     <!-- Full Page Image Header with Vertically Centered Content -->
     <div class="banner position-relative">
       <div class="calendario">
-        <img src="img/calendario/calendario.webp" class="img-fluid" alt="img-carreras" >
+       <!---- <img src="img/calendario/calendario.webp" class="img-fluid" alt="img-carreras">-->
+
+        <picture>
+          <source srcset="img/calendario/calendario-xl.webp" media="(min-width: 1200px)">
+          <source srcset="img/calendario/calendario-sm.webp" media="(min-width: 576px)">
+          <img srcset="img/calendario/calendario.webp" class="w-100">
+        </picture>
       </div>
 
       <div class="redes-sociales h-100 d-flex position-absolute align-items-center justify-content-center text-center">

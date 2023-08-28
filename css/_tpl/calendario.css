@@ -5,6 +5,11 @@
     url("../../webfont/WhiteDream.woff") format("woff");
 }
 
+body{
+    overflow-x: hidden;
+  }
+  
+
 p.text-x2 {
     font-size: 20px;
 }
