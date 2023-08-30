@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería con Carrusel de Bootstrap 5</title>
+  <!-- Incluir los estilos de Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Estilos adicionales */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-img {
+      transition: transform 0.3s;
+    }
+
+    .carousel-img:hover {
+      transform: scale(1.05);
+    }
+
+    .carousel-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .carousel-overlay {
+      opacity: 1;
+    }
+
+    .title {
+      position: absolute;
+      bottom: calc(100% + 5px); /* Inicialmente, el título está fuera de la vista */
+      left: 10px;
+      color: white;
+      font-size: 18px;
+      z-index: 2;
+      transition: bottom 0.3s;
+    }
+
+    .gallery-item:hover .title {
+      bottom: calc(100% + 10px); /* Ajustar la distancia entre el título y la descripción */
+    }
+
+    .gallery-item:hover .carousel-overlay {
+      bottom: 0; /* Mover la descripción hacia arriba */
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Foto principal con efecto de superposición -->
+            <div class="carousel-item active">
+              <div class="gallery-item">
+                <img src="img/laboratorios/i2qb3/1.webp" class="d-block w-100 carousel-img" alt="Foto 1">
+                <div class="carousel-overlay">
+                  <div class="title">
+                    <h3>Título de la Foto 1</h3>
+                  </div>
+                  <h3>Descripción de la Foto 1</h3>
+                  <p>Esta es una descripción detallada de la foto.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Más fotos aquí -->
+          </div>
+        </div>
+
+        <!-- Miniaturas en la parte inferior -->
+        <div class="row mt-3">
+          <div class="col-3">
+            <a href="#galleryCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+          </div>
+          <div class="col-3">
+            <a href="#galleryCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Incluir los scripts de Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

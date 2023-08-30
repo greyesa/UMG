@@ -10,6 +10,36 @@ html, body{
     url("../../webfont/WhiteDream.woff") format("woff");
 }
 
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel-img {
+    transition: transform 0.3s;
+  }
+
+  .carousel-img:hover {
+    transform: scale(1.05);
+  }
+
+  .carousel-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .carousel-item:hover .carousel-overlay {
+    opacity: 1;
+  }
+  
+
 .formulario-container {
     padding: 50px;
     background-color: #a6e1ee;
