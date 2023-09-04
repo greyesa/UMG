@@ -4,17 +4,190 @@
       url("../../webfont/WhiteDream.woff2") format("woff2"),
       url("../../webfont/WhiteDream.woff") format("woff");
   }
-  
+
+  .acreditacion::after {
+    background: url("../../img/acreditacion.svg");
+    background-position: bottom;
+    background-size: 100% 100%;
+    bottom: -15px;
+    content: "";
+    display: block;
+    height: 37%;
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+    margin-left: 65%;
+  }
+
+  .banner::after {
+    background: url("../../img/forma-fac-carreras.svg");
+    background-position: bottom;
+    background-size: 100% 100%;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 32px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .banner .img{
+    float:left;
+  }
+
+  .banner .img-portada{
+
+    width: 100%; 
+  }
+
+
+  .banner-titulo .txt-admisiones{
+    color: #003365;
+    font-family: "Lato-BlackItalic";
+    font-size: 20px;
+    top: -62%;
+     position: absolute;  
+  }
+
+  .banner-titulo .txt-fechas{
+    /* display: inline-block; */
+    color: #003365;
+    font-family: "Lato-BlackItalic";
+    font-size: 15px;
+    background-color: rgba(251,206,48,255);
+    text-align: center;
+    width: 38%;
+    /* margin-left: 75px; */
+    margin-top: 7px;
+  }
+
+   .banner-titulo .bloque{
+    display: block;
+   }
+  .banner-titulo .mes{
+    line-height: 1.2;
+  }
+
+  .banner-titulo .time {
+    font-size: 20px;
+  }
+
+  .banner-titulo .tittle-sede, .tittle-campus{
+    font-size: 11px;
+    font-family: "Lato-LightItalic";
+    margin-top: 5px;
+  }
+
+  .banner-titulo .mm{
+    font-size: 18px;
+    font-family: "Urbanist-Bold";
+    margin-top: -8px;
+  }
+  .banner-titulo .dd{
+    font-size: 2em;
+    font-family: "Urbanist-Bold";
+    margin-top: -16px;
+    
+  }
+  .banner-titulo .hh{
+    font-size: 11px;
+    font-family: "Urbanist-regular";
+    margin-top: -14px;
+  }
+
+  .banner-titulo .txt-fechas2{
+    /* display: inline-block; */
+    color: #003365;
+    font-family: "Lato-BlackItalic";
+    font-size: 15px;
+    background-color: rgba(251,206,48,255);
+    text-align: center;
+    width: 38%;
+    /* margin-left: 75px; */
+    margin-top: 7px;
+  }
+
+  .banner-titulo .caja-eventos
+  {
+    top: -65px;
+  }
+
+
+  .facultad .link-interno {
+    float: right;
+    top: -298px;
+    text-decoration: none;
+    border-radius: 7%;
+    height: 92px;
+    width: 96px;
+    z-index: 1;
+  }
+
+  .bloque-interno{
+    background-color: white; 
+    z-index: 2;
+    position: relative;
+    opacity: 0.7;
+    z-index: 2;
+    top: -10px;
+  }
+
+  .facultad .link-interno nav a:hover {
+    color:white;
+
+  }
+
+  .bloque-interno:hover{
+     background-color: #b0e9ff /*rgba(249,215,40,255); */
+
+  }
+
+  .facultad .link-interno nav a {
+    color: #003365;
+    line-height: 2.2;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Lato-LightItalic";
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -25px;
+  }
+
+  .facultad .link-interno li {
+    list-style: none;
+  }
+
+  .carreras{
+    margin-bottom: 4%;
+  }
+
+  .carreras .banner-titulo h4{
+    color: #003365;
+    font-family: "Lato-BlackItalic";
+    font-size: 65px;
+    margin-top: 25px;
+    position: absolute;
+  }
+
   .carreras h1 {
     border-bottom: 2px solid;
     color: #003366;
-    font-family: "Lato-LightItalic";
+    font-family: "Lato-BlackItalic";
   }
-  
+
   .carreras h1 label {
     display: block;
-    font-family: "Lato-BlackItalic";
-    font-size: 38px;
+    font-size: 28px;
+    font-family: "Lato-LightItalic";
+    margin-bottom: 18px;
+  }
+
+  .carreras h1 {
+    border-bottom-color: rgba(251,206,48,255);
+  }
+  
+  .carreras nav li::marker {
+    color: rgba(251,206,48,255);
   }
   
   .carreras h4 {
@@ -28,61 +201,73 @@
     line-height: 1.7;
     text-decoration: none;
   }
-  
-  @media (min-width: 576px) {
-  
-    .carreras h1 {
-      font-size: 36px;
-    }
-  
-    .carreras h1 label {
-      font-size: 51px;
-      line-height: 1;
-    }
-  
-    .carreras h4 {
-      font-size: 23px;
-    }
-  
+
+  .decano .img-decano{
+    display: block;
+    width: 270px;
+
+  }
+
+   /*Decano*/
+   .decano h3 {
+    color: #003466;
+    font-family: "Lato-LightItalic";
+    font-size: 29px;
+    line-height: 1.1;
   }
   
-  @media (min-width: 768px) {
-  
-    .carreras h1 {
-      font-size: 43px;
-    }
-  
-    .carreras h1 label {
-      font-size: 53px;
-      line-height: 0.8;
-    }
-  
+  .decano h3 label {
+    display: block;
+    font-family: "Lato-BlackItalic";
   }
   
-  @media (min-width: 992px) {
-  
-    .carreras h1 {
-      font-size: 53px;
-    }
-  
-    .carreras h1 label {
-      font-size: 70px;
-    }
-  
-    .carreras h4 {
-      font-size: 20px;
-    }
-  
+  .decano .blockquote {
+    color: #888888;
+    font-size: 16px;
+    line-height: 1.3;
   }
   
-  @media (min-width: 1200px) {
-  
-    .carreras h1 label {
-      font-size: 80px;
-    }
-  
+  .decano .blockquote-footer {
+    color: #003466;
+    font-family: "White Dream";
+    font-size: 40px;
   }
   
+  .decano .blockquote-footer::before {
+    display: none;
+  }
+
+  .decano{
+    padding: 6%;
+  }
+  section.estudiante-ficha h3 {
+    color: #003466;
+    font-family: "Lato-LightItalic";
+    font-size: 25px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+   .estudiante-ficha .img-box{
+    background-image: url("../../img/foto_alumnos.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 240px; 
+  }
+
+  section.estudiante-ficha .btn-info {
+    background-color: #5dc4e7;
+    border-radius: 28px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    font-size: 18px;
+    font-family: "Urbanist-Bold";
+    margin-left: 35px;    
+  }
+ 
+  /*****************************************************************************************************/
   /* */
   
   section.s {
@@ -122,37 +307,12 @@
     color: #fff;
     text-decoration: none;
   }
-  
-  @media (min-width: 576px) {
-  
-    section.s h5 {
-      font-size: 22px;
-    }
-  
-    section.s h6 {
-      font-size: 26px;
-    }
-  
-    section.s .carrera-label {
-      font-size: 20px;
-    }
-  
-  }
-  
-  @media (min-width: 768px) {
-  
-    section.s h5 {
-      font-size: 25px;
-    }
-  
-  }
-  
-  /* */
-  
-  .acerca {
+
+   /*acerca*/
+   .acerca {
     position: relative;
   }
-  
+
   .acerca::after {
     background: #cacaca;
     content: "";
@@ -166,7 +326,7 @@
   
   .acerca h2 {
     color: #003365;
-    font-family: "Lato-LightItalic";
+    font-family: "Lato-LightItalic";margin-top: 6%;
   }
   
   .acerca h2 label {
@@ -184,102 +344,15 @@
     font-weight: bold;
     letter-spacing: 0.3px;
     text-transform: uppercase;
+    font-family: "Urbanist-Bold";
+    font-size: 18px;
   }
-  
-  @media (min-width: 576px) {
-  
-    .acerca h2 {
-      font-size: 30px;
-    }
-  
-    .acerca .btn-info {
-      font-size: 17px;
-    }
-  
-  }
-  
-  @media (min-width: 768px) {
-  
-    .acerca h2 {
-      font-size: 38px;
-    }
-  
-  }
-  
-  @media (min-width: 768px) {
-  
-    .acerca h2 {
-      font-size: 48px;
-    }
-  
-  }
-  
-  /* */
-  
-  .decano h3 {
-    color: #003466;
-    font-family: "Lato-LightItalic";
-    font-size: 29px;
-    line-height: 0.8;
-  }
-  
-  .decano h3 label {
-    display: block;
-    font-family: "Lato-BlackItalic";
-  }
-  
-  .decano .blockquote {
-    color: #888888;
-    font-size: 16px;
-    line-height: 1.3;
-  }
-  
-  .decano .blockquote-footer {
-    color: #003466;
-    font-family: "White Dream";
-    font-size: 40px;
-  }
-  
-  .decano .blockquote-footer::before {
-    display: none;
-  }
-  
-  @media (min-width: 768px) {
-  
-    .decano h3 {
-      font-family: 34px;
-    }
-  
-  }
-  
-  @media (min-width: 992px) {
-  
-    .decano h3 {
-      font-size: 39px;
-    }
-  
-    .decano .blockquote {
-      font-size: 18px;
-    }
-  
-    .decano .blockquote-footer {
-      font-size: 46px;
-    }
-  
-  }
-  
-  @media (min-width: 992px) {
-  
-    .decano h3 {
-      font-size: 45px;
-    }
-  
-  }
-  
-  /* */
-  
+
+  /*Proyectos*/
   section.proyectos {
     background: #cacaca;
+    color: #263e6d;
+    font-size: 18px;
   }
   
   section.proyectos h3 {
@@ -294,11 +367,6 @@
     font-size: 35px;
   }
   
-  section.proyectos p {
-    color: #263e6d;
-    font-size: 18px;
-  }
-  
   section.proyectos .btn-info {
     background-color: #5dc4e7;
     border-radius: 15px;
@@ -307,11 +375,753 @@
     letter-spacing: 0.3px;
     text-transform: uppercase;
   }
+
+  /*Estudiantes*/
+  section.estudiante-ficha {
+    font-size: 14px;
+  }
   
-  @media (min-width: 768px) {
+  section.estudiante-ficha .bg-info {
+    background-color: #e5f4f9 !important;
+  }
   
-    section.proyectos h3 {
-      font-family: 35px;
+
+  section.estudiante-ficha h3 label {
+    display: block;
+    font-family: "Lato-BlackItalic";
+    /* font-size: 70px; */
+  }
+ 
+  section.estudiante-ficha .img-alumnos{
+    display: block;
+    width: 102%;
+  } 
+
+  section.estudiante-ficha .texto{
+    margin-top: 8%;
+    margin-left: 5%;
+    width: 88%;
+    line-height: 1.3;
+  } 
+
+  .acerca .marca{
+    position: absolute;
+    top: 42%;
+    left: 0px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    font-family: "Urbanist-Bold";
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    }
+
+    /*menu interno*/
+    .link-interno .dropstart{
+      position: absolute;
+      margin-top: 4%;
+      margin-left: 50%;
+    }
+
+    .link-interno .btn-secondary{
+      position: relative;
+      background-color: rgba(251,206,48,255);
+      color: #fff;
+      margin-top: 57%;
+      border: none;
+      font-size: 130%;
+      border-radius: 20%;
+      /* margin-left: 11%; */
+      margin-left: 3%;
+    }
+
+    .link-interno  .dropdown-menu{
+      width: 20%;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      position: relative;
+    }
+
+    .link-interno .bloque-interno{
+      width: 90%;
+      margin-left: 39%;
+      padding: 14px;
+      border-radius: 20px 0px 0px 20px;
+    }
+
+    .link-interno .bloque-interno i{
+      margin-top: -70%;
+  }
+    
+
+  
+  
+  /*576*/
+  @media (min-width: 576px) 
+  {
+    .link-interno .dropstart {
+      /* margin-top: -52%;
+      margin-left: 38%; */
+    }
+
+    .link-interno .bloque-interno {
+      padding: 26px;
     }
   
+    section.s h5 {
+      font-size: 28px;
+    }
+  
+    section.s h6 {
+      font-size: 26px;
+    }
+  
+    section.s .carrera-label {
+      font-size: 20px;
+    }
+
+
+    .acreditacion::after {
+      bottom: -25px;
+      height: 30%;
+    }
+  
+    .banner::after {
+      /* bottom: -140px; */
+      bottom: -43%;
+    }
+
+    .facultad .link-interno {
+      top: -450px;
   }
+
+  .banner-titulo .txt-admisiones {
+    font-size: 35px;
+    top: -100%;
+  }
+
+  .banner-titulo .caja-eventos {
+    top: -87px;
+  }
+
+  .banner-titulo .txt-fechas {
+    width: 30%;
+  }
+  .banner-titulo .txt-fechas2 {
+    width: 30%;
+  }
+  .banner-titulo .tittle-sede, .tittle-campus {
+    font-size: 16px;
+  }
+  .banner-titulo .dd {
+    font-size: 3.2em;
+  }
+  .facultad .link-interno {
+    height: 105px;
+    width: 100px;
+    padding: 12px;
+  }
+  
+  .banner-titulo .txt-admisiones {
+    top: -63%;
+  }
+  
+  .carreras h1 label
+  {
+    font-size: 34px;
+  }
+  
+  .acerca h2 {
+  font-size: 32px;
+  }
+  
+  .decano .img-decano{
+    display: block;
+    width: 350px;
+    margin: auto;
+  }
+  .decano h3 {
+    font-size: 38px;
+  }
+  section.estudiante-ficha h3 {
+    font-size: 38px;
+  }
+  section.estudiante-ficha h3 {
+    font-size: 38px;
+  }
+
+  .acerca .btn-info {
+    font-size: 25px;
+  }
+
+  section.estudiante-ficha .btn-info {
+    font-size: 25px;
+    margin-left: 123px;    
+  }
+
+  .banner::after {
+    bottom: 0%;
+    height: 43px;
+  }
+
+
+}/*Fin 576px*/
+
+
+  /*Resolución 768*/
+  @media (min-width: 768px)
+   {
+
+    .link-interno .dropstart {
+      /* margin-top: -55%;
+      margin-left: 35%; */
+    }
+
+    .link-interno .bloque-interno {
+      padding: 26px;
+    }
+
+    .bloque-interno{
+      /* opacity: 0.6; */
+      top: -8px;
+       margin-left: 40%;
+    }
+  
+    .acerca h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  
+    .figcaption {
+      text-align: center;
+    }
+    .decano p {
+      font-size: 14px;
+    }
+
+    .decano h3{
+      margin-top: 100px;
+    }
+
+    .decano .img-decano{
+      display: block;
+      width: 270px;
+      margin-top: 75px;
+    }
+
+    .decano .contenido
+    {
+      display: block;
+    }
+      
+    section.proyectos {
+      font-size: 19px;
+    }
+  
+    section.proyectos h3 {
+      font-size: 35px;
+    }
+
+
+    .banner-titulo .tittle-sede, .tittle-campus {
+      font-size: 14px;
+    }
+
+    .banner-titulo .txt-fechas{
+      display: inline-block;
+      font-size: 16px;
+      top: -80%;
+      width: 20%;
+    }
+
+    .banner-titulo .caja-eventos {
+      top: -185px;
+      margin-left: 25px;
+    }
+
+    .banner-titulo .txt-fechas2{
+      display: inline-block;
+      font-size: 16px;
+      top: -80%;
+      width: 20%;
+    }
+
+    .banner-titulo .txt-admisiones {
+      top: -174%;
+      margin-left: 27px;
+      font-size: 24px;
+    }
+
+    .acreditacion::after {
+      bottom: -10px;
+      height: 25%;
+    }
+
+    .facultad .link-interno {
+      padding: 14px;
+    }
+
+    .carreras h1{
+      font-size: 48px;
+    }
+
+    .carreras h1 label{
+      font-size: 47px;
+    }
+
+    .decano h3{
+      margin-top: 93px;
+      font-size: 40px;
+    }
+
+    section.estudiante-ficha .texto {
+      margin-top: 2%;
+      margin-left: 8%;
+      width: 85%;
+      margin-bottom: 34%;
+      font-size: 16px;
+    } 
+
+    section.estudiante-ficha h3 {
+      font-size: 31px;
+    }
+
+    section.estudiante-ficha .btn-info {
+      font-size: 21px;
+      margin-left: 29px; 
+      margin-top: -46%   
+    }
+
+    .acerca .btn-info {
+      font-size: 21px;
+    }
+
+    .banner::after {
+      bottom: 0px;
+      height: 63px;
+      width: 100%;
+    }
+
+    section.s h5 {
+      font-size: 25px;
+    }
+
+
+
+  } /*Fin 768px*/
+
+
+  /*992px*/
+  @media (min-width: 992px) {
+
+    .link-interno .dropstart {
+      /* margin-top: -59%;
+      margin-left: 30%; */
+    }
+
+    .link-interno .bloque-interno {
+      /* padding: 26px; */
+      width: 97%;
+
+    }
+  
+    .decano h3 {
+      font-size: 39px;
+    }
+  
+    .decano .blockquote {
+      font-size: 18px;
+    }
+  
+    .decano .blockquote-footer {
+      font-size: 60px;
+      margin-top: 5px;
+      margin-left: 2%;
+    }
+    .decano h3 {
+      font-size: 50px;
+    }
+
+    .acreditacion::after {
+      bottom: -5px;
+      height: 20%;
+    }
+
+    .facultad .link-interno{
+      padding: 12px;
+      height: 155px;
+      width: 107px;
+      top: -538px;
+      font-size: 25px;
+    }
+
+    .facultad .link-interno nav a{
+      font-size: 15px;
+    }
+
+    .acerca h2 {
+      font-size: 35px;
+    }
+
+    .acerca .marca{
+      font-size: 75px;
+      top: 36%;
+    }
+
+    .banner-titulo .txt-admisiones {
+      top: -186%;
+      font-size: 33px;
+    }
+
+    .acerca .btn-info {
+      font-size: 25px;
+      margin-bottom: 60px;
+      margin-top: 17px;
+    }
+
+    section.estudiante-ficha .btn-info {
+      font-size: 30px;
+    }
+
+    .decano p {
+      font-size: 16px;
+    }
+
+    .decano .blockquote-footer {
+      font-size: 45px;
+    }
+
+    section.estudiante-ficha .btn-info{
+      margin-left: 108px;
+      margin-top: -57%;
+    }
+
+    section.estudiante-ficha h3 {
+      font-size: 31px;
+      text-align: left;
+    }
+
+    section.estudiante-ficha h3 label{
+      font-size: 36px;
+      text-align: left;
+    }  
+
+    .banner::after {
+      bottom: 0%;
+      height: 85px;
+    }
+
+    .decano .img-decano {
+      width: 325px;
+      margin-top: 53px;
+    }
+    section.s h5 {
+      font-size: 33px;
+    }
+
+  } /*Fin 992px*/
+
+
+  /*1200*/
+  @media (min-width: 1200px) {
+    .link-interno .dropstart {
+      /* margin-top: -50%;
+      margin-left: 40%; */
+    }
+
+    .link-interno .bloque-interno{
+      width: 82%;
+      margin-left: 26%;
+      padding: 92px;
+      border-radius: 20px 0px 0px 20px;
+    }
+
+    .link-interno .bloque-interno i{
+      margin-top: 25%;
+  }
+
+  .link-interno .lista{
+    margin-left: -43px;
+  }
+
+    .link-interno .lista{
+      margin-left: -22px;
+    }
+
+    .link-interno .dropdown-menu {
+      text-align: left;
+    }
+
+    .acreditacion::after {
+      bottom: 10px;
+      height: 20%;
+    }
+
+    .banner-titulo .caja-eventos {
+      top: -211px;
+      margin-left: 25px;
+    }    
+
+    .banner-titulo .txt-fechas {
+      font-size: 20px;
+      top: -80%;
+      width: 15%;
+    }
+
+    .banner-titulo .txt-fechas2 {
+      font-size: 20px;
+      top: -80%;
+      width: 15%;
+    }
+
+    .banner-titulo .tittle-sede, .tittle-campus {
+      font-size: 15px;
+    }
+
+    .banner-titulo .mm {
+      font-size: 22px;
+      margin-top: -7px;
+    }
+
+    .banner-titulo .dd {
+      margin-top: -26px;
+    }
+
+    .banner-titulo .hh {
+      font-size: 14px;
+      margin-top: -22px;
+    }
+
+    .facultad .link-interno {
+      padding: 12px;
+      height: 257px;
+      width: 137px;
+      top: -558px;
+      font-size: 30px;
+    }
+
+    .facultad .link-interno nav a {
+      font-size: 27px;
+    }
+
+    .carreras h1 {
+      font-size: 78px;
+    }
+
+    .carreras h4 {
+      font-size: 26px;
+    }
+
+    .carreras ul{
+      font-size: 25px;
+    }
+
+    .carreras h1 label {
+      font-size: 77px;
+    }
+
+    .acerca h2 {
+      font-size: 45px;
+    }
+
+    .decano p {
+      font-size: 22px;
+    }
+
+    .decano .img-decano {
+      width: 500px;
+      margin-top: 10px;
+    }
+
+    .decano h3 {
+      font-size: 58px;
+    }
+
+    section.estudiante-ficha h3 label {
+      font-size: 100px;
+    }
+    .banner-titulo .caja-eventos {
+      margin-top: -2%;
+    }
+    .banner-titulo .txt-admisiones {
+      top: -188%;
+    }
+
+    .banner::after {
+      bottom: 0%;
+      height: 120px;
+    }
+
+    
+    section.estudiante-ficha h3 {
+      font-size: 51px;
+    }
+
+    section.estudiante-ficha h3 label {
+      font-size: 58px;
+    }
+
+    section.estudiante-ficha .texto {
+      font-size: 20px;
+    }
+
+    section.estudiante-ficha .btn-info {
+      margin-left: 44px;
+    }
+    section.s h5 {
+      font-size: 30px;
+    }
+
+
+    /
+  }/*fin 1200*/
+
+    /*1400*/
+    @media (min-width: 1400px) {
+
+      .banner::after {
+        bottom: 0%;
+        height: 130px;
+      }
+
+      .link-interno .dropstart {
+        margin-top: -5%;
+        margin-left: 34%;
+      }
+  
+      .link-interno .bloque-interno {
+        padding: 26px;
+      }
+
+      .facultad .link-interno{
+        width: 160px;
+      }
+
+      .facultad .link-interno-nav{
+        margin-top: 41px;
+        padding: 11px;
+      }
+
+      .banner-titulo .caja-eventos {
+        top: -80;
+        margin-left: 25px;
+      }
+
+      .banner-titulo .txt-fechas{
+        width: 12%;
+      }
+
+      .banner-titulo .txt-fechas2{
+        width: 12%;
+      }
+
+      .link-interno .btn-secondary{
+        position: relative;
+        /* padding: 5px; */
+        background-color: rgba(251,206,48,255);
+        color: #fff;
+        margin-top: 22%;
+        border: none;
+        font-size: 50px;
+        border-radius: 20%;
+      }
+
+      .link-interno .dropstart{
+        /* position: absolute;
+        margin-top: -138%;
+        margin-left: 34%; */
+        position: fixed;
+        top: 380px;
+        right: 0;
+        width: 3%;
+        height: 10vh;
+      }
+
+      .link-interno  .dropdown-menu{
+        background-color: #036500;
+        width: 20%;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        position: relative;
+
+
+      }
+
+      .link-interno .bloque-interno{
+        width: 82%;
+        margin-left: 34%;
+        padding: 100px;
+        border-radius: 20px 0px 0px 20px;
+      }
+
+      .link-interno .bloque-interno i{
+        margin-top: 25%;
+    }
+
+    .link-interno .lista{
+      margin-left: -43px;
+    }
+
+    section.estudiante-ficha {
+      font-size: 20px;
+    }
+
+    section.estudiante-ficha h3 {
+      font-size: 75px;
+      margin-top: 145px;
+    }
+
+    section.estudiante-ficha h3 label {
+      font-size: 86px;
+    }
+
+    .decano p {
+      font-size: 26px;
+    }
+    section.estudiante-ficha .btn-info {
+      margin-left: 44px;
+    }
+    section.s h5 {
+      font-size: 35px;
+    }
+
+  }
+
+  @media (min-width: 1800px) {
+    section.estudiante-ficha {
+      font-size: 20px;
+    }
+
+    section.estudiante-ficha h3 {
+      font-size: 53px;
+      margin-top: 145px;
+    }
+
+    section.estudiante-ficha h3 label {
+      font-size: 53px;
+    }
+
+    .decano p {
+      font-size: 26px;
+    }
+    section.estudiante-ficha .btn-info {
+      margin-left: 44px;
+    }
+
+    section.estudiante-ficha .texto {
+      margin-top: 2%;
+      margin-left: 8%;
+      width: 71%;
+      margin-bottom: 34%;
+    }
+    section.estudiante-ficha .btn-info {
+      margin-left: 116px;
+    }
+  }
+
+ 
+   

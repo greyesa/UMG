@@ -1,0 +1,57 @@
+
+.mision-vision p{
+  text-align: justify;
+}
+
+/* .mision-vision:hover
+{
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.3s ease;
+} */
+
+  .img-acerca-fac {
+    background: url("/img/acerca-sistemas.webp") no-repeat fixed center center;
+    overflow-x: clip;
+    height: 700px;
+  }
+
+  .img-acerca-fac {
+    background-size: cover;
+  }
+  
+  /* seccion metodologia */
+  .estudiante-ficha .img-box {
+    background-image: url("/img/foto_alumnos_sistemas2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 570px;
+  }
+
+  .link-interno .btn-secondary {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (min-width: 1400px) {
+    .link-interno .btn-secondary {
+      position: relative;
+      padding: 5px;
+      background-color: #000;
+      color: rgb(255, 255, 255);
+      margin-top: 22%;
+      border: medium;
+      font-size: 50px;
+      border-radius: 20%;
+      border-top-right-radius: 20%;
+      border-bottom-right-radius: 20%;
+    }
+
+    .tittle-swiper{
+      top:68.5%;
+    }
+  }
+
+
+
