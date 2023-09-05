@@ -1,0 +1,565 @@
+/*Habilitar siempre y cuando este acreditado la acreditada*/
+.acreditacion::after {
+    background: url("../../../img/acreditacion-odontologia.svg");
+    background-position: bottom;
+    background-size: 100% 100%;
+    bottom: -133px;
+    content: "";
+    display: block;
+    height: 37%;
+    position: absolute;
+    width: 27%;
+    z-index: 1;
+    margin-left: 72%;
+  }
+
+  .banner::after {
+    background: url("../../../img/forma-fac-carreras.svg");
+    background-position: bottom;
+    background-size: 100% 100%;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 32px;
+    position: absolute;
+    width: 100%;
+  }
+
+ 
+
+  .banner-titulo .txt-admisiones{
+    color: #fff;
+    font-family: "Lato-BlackItalic";
+    font-size: 20px;
+    top: -62%;
+     position: absolute;  
+  }
+
+  .banner-titulo .txt-fechas{
+    color: #fff;
+    font-family: "Lato-BlackItalic";
+    font-size: 15px;
+    background-color: #a985c1;
+    text-align: center;
+    width: 50%;
+    margin-top: 7px;
+  }
+
+  
+
+  .banner-titulo .txt-fechas2{
+    /* display: inline-block; */
+    color: #fff;
+    font-family: "Lato-BlackItalic";
+    font-size: 15px;
+    background-color: #a985c1;
+    text-align: center;
+    width: 50%;
+    /* margin-left: 75px; */
+    margin-top: 7px;
+  }
+
+
+  .facultad .link-interno nav a {
+    color: #003365;
+    line-height: 2.2;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Lato-LightItalic";
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -25px;
+  }
+
+
+  .carreras h1 {
+    border-bottom: 4px solid #a985c1;
+  }
+  
+  .carreras nav li::marker {
+    color: #cacaca
+  }
+  
+  .carreras h4 {
+    color: #277892;
+    font-family: "Urbanist-Bold";
+    font-size: 18px;
+  }
+  
+  .carreras nav a {
+    color: #898989;
+    line-height: 1.7;
+    text-decoration: none;
+  }
+
+  /* Estilos al pasar el cursor sobre el enlace */
+  .carreras nav a:hover {
+   color: #277892;
+ }
+  
+   .estudiante-ficha .img-box{
+    background-image: url("../../../img/metodologia-odontologia.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 240px; 
+  }
+
+  .blockquote p, .card-body {
+    text-align: justify;
+  }
+
+  .button:focus{
+    .blockquote-footer {
+        display: none;
+      }
+  }
+
+ 
+  /*****************************************************************************************************/
+  /* */
+  
+   
+    /*menu interno*/
+    .link-interno .dropstart{
+      position: absolute;
+      margin-top: -150%;
+      margin-left: 70%;
+    }
+
+    .link-interno .btn-secondary{
+      position: relative;
+      background-color: #cacaca;
+      color: #fff;
+      margin-top: 57%;
+      border: none;
+      font-size: 130%;
+      border-radius: 20%;
+      margin-left: 3%;
+    }
+
+    .link-interno  .dropdown-menu{
+      width: 20%;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      position: relative;
+    }
+
+    .link-interno .bloque-interno{
+      width: 90%;
+      margin-left: 39%;
+      padding: 14px;
+      border-radius: 20px 0px 0px 20px;
+    }
+
+    .link-interno .bloque-interno i{
+      margin-top: -70%;
+  }
+
+  .card-body{
+    width: 300px;
+}
+    
+  
+  /*576*/
+  @media (min-width: 576px) 
+  {  
+    .link-interno .bloque-interno {
+      padding: 26px;
+    }
+      
+    .facultad .link-interno {
+      top: -450px;
+  }
+  .banner-titulo .txt-admisiones {
+    font-size: 37px;
+    top: -64%;
+  }
+
+  .carreras h1 label {
+    display: inline-block;
+  }
+  .card-body{
+    width: 525px;
+}
+}/*Fin 576px*/
+  
+  /*Resolución 768*/
+  @media (min-width: 768px)
+   {
+
+    .link-interno .bloque-interno {
+      padding: 26px;
+    }
+
+    .bloque-interno{
+      /* opacity: 0.6; */
+      top: -8px;
+       margin-left: 40%;
+    }
+
+    .banner-titulo .txt-admisiones {
+      top: -220px;
+      font-size: 30px;
+    }
+    .banner-titulo .txt-fechas {
+      width: 24%;
+    }
+    .banner-titulo .txt-fechas2{
+      width: 24%;
+    }
+    .col-md-4 {
+     flex: 0 0 auto;
+     width: 50%;
+    }
+    .card-body{
+        width: 345px;
+    }
+  } /*Fin 768px*/
+
+
+  /*992px*/
+  @media (min-width: 992px) {
+    .link-interno .bloque-interno {
+      /* padding: 26px; */
+      width: 97%;  
+    }  
+    .facultad .link-interno{
+      padding: 0px;
+      height: 155px;
+      width: 107px;
+      top: -538px;
+      font-size: 25px;
+    }
+
+
+    .banner-titulo .txt-admisiones {
+      top: -220px;
+      font-size: 33px;
+    }
+
+    .card-body {
+        width: 447PX;
+      }
+
+
+
+  } /*Fin 992px*/
+
+
+  /*1200*/
+  @media (min-width: 1200px) {
+
+    .link-interno .bloque-interno{
+      width: 82%;
+      margin-left: 26%;
+      padding: 92px;
+      border-radius: 20px 0px 0px 20px;
+    }
+
+    .link-interno .bloque-interno i{
+      margin-top: 25%;
+  }
+
+  .link-interno .lista{
+    margin-left: -43px;
+  }
+
+    .link-interno .lista{
+      margin-left: -22px;
+    }
+
+    .link-interno .dropdown-menu {
+      text-align: left;
+    }
+
+    .acreditacion::after {
+      bottom: 10px;
+      height: 20%;
+    }
+
+    .banner-titulo .caja-eventos {
+      top: -211px;
+      margin-left: 25px;
+    }    
+
+    .banner-titulo .txt-fechas {
+      font-size: 20px;
+      top: -80%;
+      width: 18%;
+    }
+
+    .banner-titulo .txt-fechas2 {
+      font-size: 20px;
+      top: -80%;
+      width: 18%;
+    }
+
+    .banner-titulo .tittle-sede, .tittle-campus {
+      font-size: 15px;
+    }
+
+    .banner-titulo .mm {
+      font-size: 22px;
+      margin-top: -7px;
+    }
+
+    .banner-titulo .dd {
+      margin-top: -26px;
+    }
+
+    .banner-titulo .hh {
+      font-size: 14px;
+      margin-top: -22px;
+    }
+
+    .facultad .link-interno {
+      padding: 0px;
+      height: 257px;
+      width: 137px;
+      top: -222px;
+      font-size: 30px;
+    }
+
+    .facultad .link-interno nav a {
+      font-size: 27px;
+    }
+
+    .carreras h1 {
+      font-size: 78px;
+    }
+
+    .carreras h4 {
+      font-size: 26px;
+    }
+
+    .carreras ul{
+      font-size: 25px;
+    }
+
+    .carreras h1 label {
+      font-size: 77px;
+    }
+
+    .acerca h2 {
+      font-size: 45px;
+    }
+
+    .decano p {
+      font-size: 22px;
+    }
+
+    .decano .img-decano {
+      width: 500px;
+      margin-top: 10px;
+    }
+
+    .decano h3 {
+      font-size: 58px;
+    }
+
+    section.estudiante-ficha h3 label {
+      font-size: 100px;
+    }
+    .banner-titulo .caja-eventos {
+      margin-top: -2%;
+    }
+    .banner-titulo .txt-admisiones {
+      top: -194%;
+    }
+    .banner-titulo .txt-admisiones {
+      font-size: 38px;
+    }
+
+    .banner::after {
+      bottom: 0%;
+      height: 120px;
+    }
+
+    
+    section.estudiante-ficha h3 {
+      font-size: 51px;
+    }
+
+    section.estudiante-ficha h3 label {
+      font-size: 58px;
+    }
+
+    section.estudiante-ficha .texto {
+      font-size: 20px;
+    }
+
+    section.estudiante-ficha .btn-info {
+      margin-left: 44px;
+    }
+    section.s h5 {
+      font-size: 30px;
+    } 
+
+    .card-body {
+        width: 536PX;
+      }
+
+  }/*fin 1200*/
+
+    /*1400*/
+    @media (min-width: 1400px) {
+
+      .banner::after {
+        bottom: 0%;
+        height: 130px;
+      }
+
+      .link-interno .dropstart {
+        margin-top: -5%;
+        margin-left: 34%;
+      }
+  
+      .link-interno .bloque-interno {
+        padding: 26px;
+      }
+
+      .facultad .link-interno{
+        width: 160px;
+      }
+
+      .facultad .link-interno-nav{
+        margin-top: 41px;
+        padding: 11px;
+      }
+
+      .banner-titulo .caja-eventos {
+        top: -80;
+        margin-left: 25px;
+      }
+
+      .banner-titulo .txt-fechas{
+        width: 17%;
+      }
+
+      .banner-titulo .txt-fechas2{
+        width: 17%;
+      }
+
+      .link-interno .btn-secondary{
+        position: relative;
+        /* padding: 5px; */
+        background-color: #a985c1;
+        color: #fff;
+        margin-top: 22%;
+        border: none;
+        font-size: 50px;
+        border-radius: 20%;
+      }
+
+      .link-interno .dropstart{
+
+        position: fixed;
+        top: 380px;
+        right: 0;
+        width: 3%;
+        height: 10vh;
+      }
+
+      .link-interno  .dropdown-menu{
+        background-color: #cacaca;
+        width: 20%;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        position: relative;
+
+
+      }
+
+      .link-interno .bloque-interno{
+        width: 82%;
+        margin-left: 34%;
+        padding: 100px;
+        border-radius: 20px 0px 0px 20px;
+      }
+
+      .link-interno .bloque-interno i{
+        margin-top: 25%;
+    }
+
+    .link-interno .lista{
+      margin-left: -43px;
+    }
+
+    section.estudiante-ficha {
+      font-size: 20px;
+    }
+
+    section.estudiante-ficha h3 {
+      font-size: 75px;
+      margin-top: 145px;
+    }
+
+    section.estudiante-ficha h3 label {
+      font-size: 86px;
+    }
+
+    .decano p {
+      font-size: 26px;
+    }
+    section.estudiante-ficha .btn-info {
+      margin-left: 44px;
+    }
+    section.s h5 {
+      font-size: 35px;
+    }
+    .card-body {
+        width: 620px;
+      }
+
+  }
+
+  @media (min-width: 1600px){
+    .acreditacion::after {
+      bottom: 10px;
+      height: 15%;
+    }
+    .card-body {
+        width: 710PX;
+      }
+  }
+
+  @media (min-width: 1800px) {
+    section.estudiante-ficha {
+      font-size: 20px;
+    }
+
+    section.estudiante-ficha h3 {
+      font-size: 53px;
+      margin-top: 145px;
+    }
+
+    section.estudiante-ficha h3 label {
+      font-size: 53px;
+    }
+
+    .decano p {
+      font-size: 19px;
+    }
+    section.estudiante-ficha .btn-info {
+      margin-left: 44px;
+    }
+
+    section.estudiante-ficha .texto {
+      margin-top: 2%;
+      margin-left: 8%;
+      width: 71%;
+      margin-bottom: 34%;
+    }
+    section.estudiante-ficha .btn-info {
+      margin-left: 116px;
+    }
+    .card-body {
+        width: 940px;
+      }
+  }
+
+ 
+   
