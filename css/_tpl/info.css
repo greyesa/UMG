@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: "White Dream";
     src: url("../../webfont/WhiteDream.eot") format("embedded-opentype"),
@@ -26,7 +30,9 @@ p.text-x2 {
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+    
 }
+
 
 .masthead::after {
     position: absolute;
@@ -141,6 +147,26 @@ h2 label {
     position: absolute;
     width: 100%;
     }
+
+    .banner {
+        transform-origin: center center;
+        animation: zoom 10s infinite;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    @keyframes zoom {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.10);
+          /* equals 105% */
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
 
 .contacto_info {
     padding: 40px;
