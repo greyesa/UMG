@@ -1,0 +1,61 @@
+  .masthead {
+    height: 100vh;
+    min-height: 500px;
+    /*background-image: -webkit-image-set(url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080') 1x);*/
+    /*background-image: -webkit-image-set(url('http://172.173.170.116/img/villa_nueva/villanueva.webp') 1x);*/
+    background-image: -webkit-image-set(url('../../../img/cu/campus-quetzaltenango.jpg') 1x);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    transform-origin: center center;
+    animation: zoom 10s infinite;
+    max-width: 100%;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+      /* equals 105% */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+.masthead::after {
+  position: absolute;
+  content: "";
+  bottom: -80px;
+  left: -10%;
+  width: 120%;
+  height: 220px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.masthead h1 {
+    color: #fff;
+    font-family: "Lato-BlackItalic", sans-serif;
+    font-size: 5.0em;
+    text-shadow: 3px 3px #000;
+    line-height: 71px;
+    margin-left: 45px;
+  }
+
+.masthead h1 label {
+  font-size: 1.0em;
+  line-height: 1;
+  display: block;
+  text-shadow: 3px 3px #000;
+  font-family: "Lato-LightItalic";
+  font-weight: 900;
+}
+
+ 
