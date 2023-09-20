@@ -3,7 +3,7 @@
     min-height: 500px;
     /*background-image: -webkit-image-set(url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080') 1x);*/
     /*background-image: -webkit-image-set(url('http://172.173.170.116/img/villa_nueva/villanueva.webp') 1x);*/
-    background-image: -webkit-image-set(url('../../../img/cu/campus-quetzaltenango.jpg') 1x);
+    background-image: -webkit-image-set(url('../../../img/cu/campus-quetzaltenango.webp') 1x);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
