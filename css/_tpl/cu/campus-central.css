@@ -1,0 +1,158 @@
+  .masthead {
+    height: 100vh;
+    min-height: 500px;
+    /*background-image: -webkit-image-set(url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080') 1x);*/
+    /*background-image: -webkit-image-set(url('http://172.173.170.116/img/villa_nueva/villanueva.webp') 1x);*/
+    background-image: -webkit-image-set(url('../../../img/cu/campus-central.webp') 1x);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    transform-origin: center center;
+    animation: zoom 10s infinite;
+    max-width: 100%;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+      /* equals 105% */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+.masthead::after {
+  position: absolute;
+  content: "";
+  bottom: -80px;
+  left: -10%;
+  width: 120%;
+  height: 220px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.masthead h1 {
+    color: #fff;
+    font-family: "Lato-BlackItalic", sans-serif;
+    font-size: 5.0em;
+    text-shadow: 3px 3px #000;
+    line-height: 71px;
+    margin-left: 45px;
+  }
+
+.masthead h1 label {
+  font-size: 1.0em;
+  line-height: 1;
+  display: block;
+  text-shadow: 3px 3px #000;
+  font-family: "Lato-LightItalic";
+  font-weight: 900;
+}
+
+.Aula .vistas-escritorio div:nth-child(1)::after,
+.Aula .vistas-escritorio div:nth-child(2)::after {
+  border-bottom: #e18333 3px solid;
+  bottom: 1.5px;
+  content: "";
+  display: block;
+  right: 25%;
+  position: absolute;
+  width: 50%;
+}
+
+.Aula .aulas div {
+  aspect-ratio: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Aula .Learnlab {
+  background-image: url('../../../img/quetzaltenango/quetzaltenango_laboratorio1.webp');
+}
+
+.Aula .Villanueva_Aula {
+  background-image: url('../../../img/quetzaltenango/quetzaltenango_laboratorio2.webp');
+}
+
+.Aula .VillaNueva_LaboratorioComputo {
+  background-image: url('../../../img/quetzaltenango/quetzaltenango_laboratorio1.webp');
+}
+
+.Aula .VillaNueva_Arquitectura_Laboratorio {
+  background-image: url('../../../img/quetzaltenango/quetzaltenango_laboratorio2.webp');
+}
+
+.Aula .Jutiapa_LaboratorioArquitectura {
+  background-image: url('../../../img/quetzaltenango/quetzaltenango_laboratorio1.webp');
+}
+
+.Aula .aulas a {
+  background: rgba(0,193,255,.0);
+  font-family: "Urbanist-Bold";
+  left: 0;
+  opacity: 0;
+  top: 0;
+  transition: .5s;
+}
+
+.Aula .aulas .btn {
+  align-items: center;
+  background: none;
+  border-radius: 100%;
+  color: #000;
+  display: flex;
+  font-family: uicons-regular-rounded !important;
+  height: 30px;
+  justify-content: center;
+  mix-blend-mode: screen;
+  opacity: 0;
+  position: absolute;
+  right: 30px;
+  top: -100%;
+  transition: .5s;
+  width: 30px;
+}
+
+.Aula .aulas a:hover {
+  background: rgba(0,193,255,.8);
+  opacity: 1;
+  transition: .5s;
+}
+
+.Aula .aulas a label {
+  margin-top: 111%;
+  opacity: 0;
+  transition: .5s;
+}
+
+.Aula .aulas a:hover label {
+  opacity: 1;
+  margin-top: 0;
+}
+
+.Aula .aulas a:hover .btn {
+  opacity: 1;
+  top: 30px;
+}
+
+.Aula .aulas .btn::before {
+  background: #fff;
+  bottom: 0;
+  border-radius: 100%;
+  content: "";
+  left: 0;
+  mix-blend-mode: color-burn;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
