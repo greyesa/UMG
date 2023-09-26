@@ -30,7 +30,8 @@ body{
     position: relative;
     overflow: hidden;
     transform-origin: center center;
-    animation: zoom 10s infinite;
+    /* animation: zoom 10s infinite; */
+    animation: zoom 10s;
     max-width: 100%;
   }
 
