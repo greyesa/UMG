@@ -35,6 +35,11 @@ body{
     max-width: 100%;
   }
 
+  .banner-zoom {
+    animation: zoom 10s;
+    max-width: 100%;
+  }
+
   @keyframes zoom {
     0% {
       transform: scale(1);
@@ -47,8 +52,6 @@ body{
       transform: scale(1);
     }
   }
-
-
 
 .masthead::after {
   position: absolute;
@@ -79,17 +82,292 @@ body{
   font-weight: 900;
 }
 
-.banner::after {
-  background: url("../../img/cu/forma_cu.svg");
+.carousel img {
+  width: 100%;
+}
+
+.carousel-banner::after {
+  background: url('../../img/cu/forma_cu.svg');
   background-position: bottom;
   background-size: 100% 100%;
-  bottom: 0px;
+  bottom: 0;
   content: "";
   display: block;
-  height: 3px;
+  height: 20px;
   position: absolute;
   width: 100%;
+}
+
+.carousel .carousel-item-video video {
+  min-height: 100%;
+  min-width: 100%;
+  right: 0;   
+  top: 50%; 
+  transform: translateX( calc((100% - 100vw) / 2)) translateY(-50%);
+}
+
+.carousel .carousel-control-next {
+  height: 10%;
+  left: unset;
+  margin: 30px auto auto;
+  top: 39%;
+  z-index: 1;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  border: 3px solid #fff;
+  border-radius: 100%;
+  border: 50%;
+  height: 50px;
+  left: unset;
+  margin: 0;
+  opacity: 1;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .5s;
+  width: 50px;
+  z-index: 1;
+}
+
+.carousel .carousel-control-prev {
+  top: calc(50% - 35px);
+}
+
+.carousel .carousel-control-next {
+  top: calc(50% + 35px);
+}
+
+.carousel .carousel-control-prev:hover,
+.carousel .carousel-control-next:hover {
+  border-width: 2px;
+  background-color: rgba(255,255,255,0.5);
+  color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: transparent;
+  font-family: uicons-regular-rounded !important;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  padding-top: 3px;
+  text-transform: none;
+  line-height: 1;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -4px;
+}
+
+.carousel-control-prev-icon::before {
+  content: "\f132";
+}
+
+.carousel-control-next-icon {
+  margin-left: 3px;
+}
+
+.carousel-control-next-icon::before {
+  content: "\f133";
+}
+
+@media (min-width: 320px) {
+  .carousel::after {
+    height: 309px;
+    bottom: -125px;
   }
+
+  .carousel h1 {
+    color: #fff;
+    font-family: "Lato-BlackItalic", sans-serif;
+    font-size: 1.9em;
+    text-shadow: 3px 3px #000;
+    line-height: 40px;
+    margin-left: 70px;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+  }
+  
+  .carousel h1 label {
+  font-size: 1.0em;
+  line-height: 1;
+  display: block;
+  text-shadow: 3px 3px #000;
+  font-family: "Lato-LightItalic";
+  font-weight: 900;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .carousel::after {
+    height: 150px;
+    bottom: -30px;
+  }
+
+  .carreras {
+    position: relative;
+    margin-top: -100px;
+    margin-bottom: 105px;
+  }
+
+  .carousel h1 {
+    color: #fff;
+    font-family: "Lato-BlackItalic", sans-serif;
+    font-size: 3.5em;
+    text-shadow: 3px 3px #000;
+    line-height: 50px;
+    margin-left: 90px;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+  }
+  
+  .carousel h1 label {
+  font-size: 1.0em;
+  line-height: 1;
+  display: block;
+  text-shadow: 3px 3px #000;
+  font-family: "Lato-LightItalic";
+  font-weight: 900;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .carousel::after {
+    height: 309px;
+    bottom: -95px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .carousel .carousel-control-prev,
+  .carousel .carousel-control-next {
+    right: 25px;
+  }
+
+  .carousel::after {
+    height: 309px;
+    bottom: -80px;
+  }
+
+  .carousel h1 {
+    color: #fff;
+    font-family: "Lato-BlackItalic", sans-serif;
+    font-size: 5.0em;
+    text-shadow: 3px 3px #000;
+    line-height: 71px;
+    margin-left: 90px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+  }
+  
+  .carousel h1 label {
+  font-size: 1.0em;
+  line-height: 1;
+  display: block;
+  text-shadow: 3px 3px #000;
+  font-family: "Lato-LightItalic";
+  font-weight: 900;
+  }
+
+.carreras {
+  position: relative;
+  margin-top: -165px;
+  margin-bottom: 105px;
+}
+
+}
+
+#versiculo,
+#versiculo .blockquote-footer {
+  color: #fff;
+}
+
+#versiculo {
+  bottom: 50px;
+  font-family: 'Urbanist-Bold', sans-serif;
+  text-shadow: 2px 2px #000;
+  transition: .5s;
+}
+
+#versiculo figure {
+  cursor: zoom-in;
+  border-bottom: 2px solid #fff;
+  opacity: .5;
+}
+
+#versiculo figure:hover {
+  opacity: 1;
+}
+
+#versiculo .blockquote-footer::before {
+  display: none;
+}
+
+@media (min-width: 576px) {
+
+  #versiculo {
+    bottom: 90px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  #versiculo {
+    bottom: unset;
+    top: 140px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  #versiculo {
+    top: 140px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  #versiculo {
+    left: 0;
+    top: 191px;
+  }
+
+}
+
+/* */
+
+#juan-8_32 label,
+#juan-8_32 cite {
+  font-family: "Lato-BlackItalic";
+}
+
+#juan-8_32 label,
+#juan-8_32 blockquote {
+  color: #003366;
+}
+
+#juan-8_32 blockquote {
+  color: #003366;
+  font-family: "Prescious Soul";
+}
+
+#juan-8_32 cite {
+  color: #c22f2e;
+}
 
   h5 {
     text-align: left;
@@ -167,11 +445,6 @@ h5 label {
   background-color: #0a53be;
 }
 
-.carreras {
-  position: relative;
-  margin-top: -40px;
-  margin-bottom: 105px;
-}
 
 .TourVirtual {
   height: 300px; /* Define la altura deseada para recortar */
