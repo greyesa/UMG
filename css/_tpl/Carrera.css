@@ -108,7 +108,7 @@ html, body{
         margin-right: -64%;
     }
       
-/********************************************* Fin Sección Banner ******padding**************************************************/
+/********************************************* Fin Sección Banner ********************************************************/
 
 /*Sección Carreras*/
 .carreras h4{
@@ -153,7 +153,6 @@ html, body{
 
 .carreras{
     margin-bottom: 80px;
-    margin-top: 80px; /* Fix greyes */
 }
 
 
@@ -194,7 +193,7 @@ html, body{
         /*Section picture*/
         .picture .picture-box
         {
-            background-image: url("/img/banners/carreras/foto-carrera.webp");
+            background-image: url("../../img/banners/carreras/foto-carrera.webp");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -406,7 +405,7 @@ html, body{
   .campo .row-box nav li:hover{
     background-color: #e4e0e0;
     color:#000;
-    /*text-decoration:underline;*/
+    /* text-decoration:underline; */
   }
 
   .pensa{
@@ -565,8 +564,7 @@ html, body{
 
   .head-sede{
     margin-bottom: 50px;
-     margin-top: 50px;
-    /* margin-top: 180px;  Fix greyes */
+    margin-top: 50px;
   }
 
   .head-inscripcion .tittle {
@@ -666,7 +664,7 @@ html, body{
   }
 
   .ContactForm .img-box {
-    background-image: url("/img/banners/carreras/carrera.webp");
+    background-image: url("../../img/banners/carreras/carrera.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -764,7 +762,6 @@ html, body{
 
         .carreras .tittle{
             margin-top: -62px;
-            line-height: 95px; /* Fix greyes */
         }
 
         .banner::after {
@@ -810,8 +807,6 @@ html, body{
 
         .carreras .subtittle, .subtittle_ {
             font-size: 44px;
-            line-height: 40px; /* Fix greyes */
-            margin-bottom: 50px; /* Fix greyes */
           }       
           .swiper {
             width: 516px;
@@ -1059,7 +1054,6 @@ html, body{
           
       .campo .row-box{
         margin-top: 0px;
-        margin-right: 110px; /* Fix greyes */
       }
 
           .pensa .subtittle-perfil {
@@ -1499,7 +1493,7 @@ html, body{
 
               .carreras .carrera-iconos {
                 width: 30%;
-                margin-right: -11%;1
+                margin-right: -11%;
                 top: -168px
               } 
               
@@ -1550,8 +1544,6 @@ html, body{
 
           .carreras .subtittle, .subtittle_ {
             font-size: 60px;
-            line-height: 60px; /* Fix greyes */
-            margin-bottom: 85px; /* Fix greyes */
           }
 
          /*seccion laboratorio*/ 

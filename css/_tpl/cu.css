@@ -79,6 +79,18 @@ body{
   font-weight: 900;
 }
 
+.banner::after {
+  background: url("../../img/cu/forma_cu.svg");
+  background-position: bottom;
+  background-size: 100% 100%;
+  bottom: 0px;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+  }
+
   h5 {
     text-align: left;
     position: relative;
