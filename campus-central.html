@@ -12,34 +12,8 @@
     <link href="css/_tpl/cu.css" rel="stylesheet">
     <link href="css/_tpl/cu/campus-central.css" rel="stylesheet">
     <link href="app.css" rel="stylesheet">
-
-<style>
-
-/*! CSS Used from: https://tympanus.net/Development/InlineAnchorStyles/css/normalize.css */
-section{display:block;}
-a:focus{outline:thin dotted;}
-a:active,a:hover{outline:0;}
-/*! CSS Used from: https://tympanus.net/Development/InlineAnchorStyles/css/demo.css */
-*,*:after,*:before{-webkit-box-sizing:border-box;box-sizing:border-box;}
-a{color:#404d5b;text-decoration:none;outline:none;}
-section{padding:6em 2em;}
-section p{font-size:20px;line-height:1.518;max-width:1200px;margin:0 auto;}
-@media screen and (max-width: 50em){
-section{font-size:50%;padding:6em 6.6em;}
-}
-/*! CSS Used from: https://tympanus.net/Development/InlineAnchorStyles/css/component.css */
-section{position:relative;z-index:1;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
-section a{position:relative;display:inline-block;outline:none;color:#404d5b;vertical-align:bottom;text-decoration:none;white-space:nowrap;}
-section a::before,section a::after{pointer-events:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;}
-.link-braces a{padding:0 0.25em;font-weight:500;-webkit-transition:color 0.2s;transition:color 0.2s;}
-.link-braces a:hover{color:#d04c3f;}
-.link-braces a::before,.link-braces a::after{position:absolute;top:0;font-weight:100;font-size:150%;line-height:1;opacity:0;-webkit-transition:opacity 0.2s, -webkit-transform 0.2s;transition:opacity 0.2s, transform 0.2s;}
-.link-braces a::before{left:-0.1em;content:'[';-webkit-transform:translateX(-100%);transform:translateX(-100%);}
-.link-braces a::after{right:-0.1em;content:']';-webkit-transform:translateX(100%);transform:translateX(100%);}
-.link-braces a:hover::before,.link-braces a:hover::after{opacity:1;-webkit-transform:translateX(0);transform:translateX(0);}
-</style>
    
-    <title>Universidad Mariano Gálvez de Guatemala: Jutiapa</title>
+    <title>Universidad Mariano Gálvez de Guatemala: Campus Central</title>
   </head>
   <body class="cu">
    
@@ -696,79 +670,133 @@ section a::before,section a::after{pointer-events:none;-webkit-backface-visibili
     </header>
 
     <main>
-
+      <section id="carousel_HomeIndex" class="carousel carousel-banner banner-zoom slide" data-bs-ride="false">
       
-  <!-- Full Page Image Header with Vertically Centered Content -->
- 
-<div class="masthead">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 ">
-        <h1>Campus<label>Central</label></h1>
-      </div>
+        <div class="carousel-inner">
 
- 
-    </div>
-  </div>
-</div>
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-12 ">
+                <h1>Campus<label>Central</label></h1>
+              </div>
+            </div>
+          </div>
 
-<div class="redes-sociales h-100 d-flex position-absolute align-items-center justify-content-center text-center">
-  <ul class="list-unstyled m-0 p-0">
-    <li class="py-2">
-      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
-        <i class="fi fi-brands-facebook"></i>
-      </a>
-    </li>
-    <li class="py-2">
-      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
-        <i class="fi fi-brands-youtube"></i>
-      </a>
-    </li>
-    <li class="py-2">
-      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
-        <i class="fi fi-brands-instagram"></i>
-      </a>
-    </li>
-    <li class="py-2">
-      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
-        <i class="fi fi-brands-tik-tok"></i>
-      </a>
-    </li>
-    <li class="py-2">
-      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
-        <i class="fi fi-brands-linkedin"></i>
-      </a>
-    </li>
-  </ul>
-</div>
+          <div class="carousel-item active">
+            <picture>
+              <source srcset="img/villa_nueva/villa-nueva-campus-1-d.webp" media="(min-width: 1200px)">
+              <source srcset="img/villa_nueva/villa-nueva-campus-1-m.webp" media="(min-width: 576px)">
+              <img srcset="img/villa_nueva/villa-nueva-campus-1-t.webp">
+            </picture>
+          </div>
+
+          <div class="carousel-item">
+            <picture>
+              <source srcset="img/villa_nueva/villa-nueva-campus-2-d.webp" media="(min-width: 1200px)">
+              <source srcset="img/villa_nueva/villa-nueva-campus-2-m.webp" media="(min-width: 576px)">
+              <img srcset="img/villa_nueva/villa-nueva-campus-2-t.webp">
+            </picture>
+          </div>
+
+          <div class="carousel-item">
+            <picture>
+              <source srcset="img/villa_nueva/villa-nueva-campus-3-d.webp" media="(min-width: 1200px)">
+              <source srcset="img/villa_nueva/villa-nueva-campus-3-m.webp" media="(min-width: 576px)">
+              <img srcset="img/villa_nueva/villa-nueva-campus-3-t.webp">
+            </picture>
+          </div>
+         
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carousel_HomeIndex" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">&lt;</span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carousel_HomeIndex" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">&gt;</span>
+        </button>
+        
+        <div class="redes-sociales h-100 d-flex position-absolute align-items-center justify-content-center text-center">
+          <ul class="list-unstyled m-0 p-0">
+            <li class="py-2">
+              <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
+                <i class="fi fi-brands-facebook"></i>
+              </a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
+                <i class="fi fi-brands-youtube"></i>
+              </a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
+                <i class="fi fi-brands-instagram"></i>
+              </a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
+                <i class="fi fi-brands-tik-tok"></i>
+              </a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
+                <i class="fi fi-brands-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="versiculo" class="w-100 position-absolute">
+          <div class="container-fluid container-xl">
+            <div class="col-8 offset-2 offset-sm-1 col-lg-6">
+              <figure class="px-2">
+                <label class="fs-5 fs-md-4">
+                  Versículo del día
+                </label>
+                <blockquote class="blockquote fs-6 fs-md-5 lh-sm">
+                  "—Esto es lo que Dios quiere que hagan: que crean en aquel a quien él envió —respondió Jesús."
+                </blockquote>
+                <figcaption class="blockquote-footer fs-6 fs-md-5 lh-sm">
+                  <cite class="fst-normal">Juan 6:29</cite> | NVI Powered by BibleGateway.com
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <section class="carreras">
         <div class="container">
 
           <div class="row">
+            <div class="col-8 offset-2 col-md-3 offset-md-0 col-lg-3  datos-carrera">
+              
+              <h2 class="counter pb-3 pb-sm-4 pb-md-5 text-center"><label>36</label> Facultades</h2>
+            </div>
+            <div class="col-8 offset-2 col-md-3 offset-md-0 col-lg-3  datos-carrera">
+              <h2 class="counter pb-3 pb-sm-4 pb-md-5 text-center"><label>+66,135</label> Egresados </h2>
+            </div>
             <div class="col-8 offset-2 col-md-3 offset-md-0 col-lg-3 datos-carrera">
-              <h2 class="counter pb-3 pb-sm-4 pb-md-5 text-center"><label>146</label> Carreras <br>  activas</h2>
-            </div>
-            <div class="col-8 offset-2 col-md-3 offset-md-0 col-lg-3  datos-carrera">
-              <h2 class="counter pb-3 pb-sm-4 pb-md-5 text-center"><label>402</label> Aulas <br>modernas</h2>
-            </div>
-            <div class="col-8 offset-2 col-md-3 offset-md-0 col-lg-3  datos-carrera">
-              <h2 class="counter pb-3 pb-sm-4 pb-md-5 text-center"><label>+260</label> Catedráticos</h2>
+              <h2 class="counter pb-3 pb-sm-4 pb-md-5 text-center"><label>147</label> Carreras <br>  activas</h2>
             </div>
             <div class="col-8 offset-2 col-md-3 offset-md-0 col-lg-3 ">
-              <h2 class="counter pb-3 pb-sm-4 pb-md-5 text-center"><label>56</label> Años al servicio<br> de la Educación</h2>
+              <h2 class="counter pb-3 pb-sm-4 pb-md-5 text-center"><label>57</label> Años al servicio<br> de la Educación</h2>
             </div>
           </div>
 
           <div class="row">
-            <section class="link-braces">
-              <p>Campus Central de Universidad Mariano Gálvez, desde su fundación, ha experimentado un crecimiento significativo y ha diversificado su oferta académica, actualmente cuenta con <a target="_blank" href="#"><b> 13 facultades</b></a>, 147 carreras universitarias en diferentes grados académicos de Técnicos Universitarios, Profesorados, Licenciaturas, Maestrías, Doctorados, 3 laboratorios de última generación en las áreas de investigación e innovación: <a target="_blank" href="#"><b>CITE</b></a>, <a target="_blank" href="#"><b>I2QB3</b></a>, <a target="_blank" href="#"><b>IN3</b></a>. <a target="_blank" href="#"><b>20 laboratorios de cómputo</b></a>, 5 Campus Universitarios: Campus Central, <a target="_blank" href="#"><b>Jutiapa</b></a>, <a target="_blank" href="#"><b>Huehuetenango</b></a>, <a target="_blank" href="#"><b>Quetzaltenango</b></a>,<a target="_blank" href="#"><b>Villa Nueva</b></a>.<br>
-              Estos campus están equipados con instalaciones modernas, bibliotecas, laboratorios y otros recursos para el aprendizaje.<br><br>
-              Además se cuenta con <a target="_blank" href="#"><b>36 Centros Universitarios</b></a> en todo el país.<br><br>
-              <b>Reconocimientos y Acreditaciones:</b><br>
-              La universidad ha obtenido reconocimientos y <a target="_blank" href="#"><b>5 carreras acreditadas internacionalmente</b></a> que respaldan la calidad de su educación y su compromiso con los estándares académicos.</p>
-            </div>
+            <div class="col-12">
+              
+              <p class="text-x2 justify-content-center">
+                <p>Campus Central de Universidad Mariano Gálvez, desde su fundación, ha experimentado un crecimiento significativo y ha diversificado su oferta académica, actualmente cuenta con <a target="_blank" href="#"><b> 13 facultades</b></a>, 147 carreras universitarias en diferentes grados académicos de Técnicos Universitarios, Profesorados, Licenciaturas, Maestrías, Doctorados, 3 laboratorios de última generación en las áreas de investigación e innovación: <a target="_blank" href="#"><b>CITE</b></a>, <a target="_blank" href="#"><b>I2QB3</b></a>, <a target="_blank" href="#"><b>IN3</b></a>. <a target="_blank" href="#"><b>20 laboratorios de cómputo</b></a>, 5 Campus Universitarios: Campus Central, <a target="_blank" href="#"><b>Jutiapa</b></a>, <a target="_blank" href="#"><b>Huehuetenango</b></a>, <a target="_blank" href="#"><b>Quetzaltenango</b></a>,<a target="_blank" href="#"><b>Villa Nueva</b></a>.<br>
+                  Estos campus están equipados con instalaciones modernas, bibliotecas, laboratorios y otros recursos para el aprendizaje.<br><br>
+                  Además se cuenta con <a target="_blank" href="#"><b>36 Centros Universitarios</b></a> en todo el país.<br><br>
+                  <b>Reconocimientos y Acreditaciones:</b><br>
+                  La universidad ha obtenido reconocimientos y <a target="_blank" href="#"><b>5 carreras acreditadas internacionalmente</b></a> que respaldan la calidad de su educación y su compromiso con los estándares académicos.</p>
+                   
+            </div></div>
 
             <div class="row">
               <div class="col-12">
@@ -965,16 +993,16 @@ section a::before,section a::after{pointer-events:none;-webkit-backface-visibili
               <label class="carrera-label">
                Domingo   </label>
               <p>
-                <a href="https://goo.gl/maps/hsxCZYezAezWTB7x6" target="_blank" rel="noopener noreferrer">
-                 Villa Nueva, Guatemala. Carretera Antigua a Amatitlán <br>KM 20.5 zona 10 Villa Nueva, Guatemala.
+                <a href="https://maps.app.goo.gl/tptQRVNudA9Kjm6NA" target="_blank" rel="noopener noreferrer">
+                  3a. Avenida 9-00 Zona 2 Interior Finca el Zapote <br>Guatemala, Guatemala.
                 </a><br>
-                <a href="tel:79640500">
-                  PBX: 79640500
+                <a href="tel:24111800">
+                  PBX: (502) 24111800
                 </a>
                 <br>
                 Correos: 
-                <a href="mailto:villanueva@umg.edu.gt">
-                  villanueva@umg.edu.gt
+                <a href="mailto:info@umg.edu.gt">
+                  info@umg.edu.gt
                 </a>
               <br>
                 Horario: Lunes a viernes de 07:00 a 17:00 hrs.
@@ -997,19 +1025,6 @@ section a::before,section a::after{pointer-events:none;-webkit-backface-visibili
       </section>
 
 
-     <!-- <section class="py-4 text-center">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-12 mt-2 mb-3">
-              <picture>
-                <img src="img/villa_nueva/villa_nueva_tour.webp" style="width: 100%;" alt="Villa Nueva">
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>-->
-
       <section class="Aula  py-4 text-center">
         <div class="container">
           <div class="row">
@@ -1024,37 +1039,20 @@ section a::before,section a::after{pointer-events:none;-webkit-backface-visibili
             <div class="aulas row">
               <div class="Learnlab  position-relative offset-md-0 col-lg-6">
                 <a href="#" class="d-flex align-items-center justify-content-center overflow-hidden position-absolute h-100 w-100 text-light text-uppercase text-decoration-none">
-                  <label class="d-block w-50 lh-sm fs-5 fs-md-4 fs-xxl-3 text-center">Laboratorios de Cómputo</label>
+                  <label class="d-block w-50 lh-sm fs-5 fs-md-4 fs-xxl-3 text-center">Laboratorio de Arquitectura</label>
                   <span class="btn"></span>
                 </a>
               </div>
               <div class="Villanueva_Aula  overflow-hidden position-relative offset-md-0 col-lg-6">
                 <a href="#" class="d-flex align-items-center justify-content-center overflow-hidden position-absolute h-100 w-100 text-light text-uppercase text-decoration-none">
-                  <label class="d-block w-50 lh-sm fs-5 fs-md-4 fs-xxl-3 text-center">Laboratorio de Dibujo</label>
+                  <label class="d-block w-50 lh-sm fs-5 fs-md-4 fs-xxl-3 text-center">Laboratorios de Cómputo</label>
                   <span class="btn"></span>
                 </a>
               </div>
-           
 
             </div>
 
-          <!-- <div class="row">
-            <div class="offset-md-0 col-lg-6">
-              <a href="villa_nueva/laboratorios">
-             <picture>
-              <img src="img/villa_nueva/villa_nueva_laboratorio1.webp" class="image" alt="Villa Nueva">
-             </picture></a>
-            </div>
-            <div class="offset-md-0 col-lg-6">
-              <a href="villa_nueva/laboratorios">
-              <picture>
-               <img src="img/villa_nueva/villa_nueva_laboratorio2.webp" class="image" alt="Villa Nueva">
-              </picture>
-              </a>
-             </div>
-          </div>
-        </div> -->
-
+  
       </section>
 
 
@@ -1124,9 +1122,9 @@ section a::before,section a::after{pointer-events:none;-webkit-backface-visibili
       function showFullScreen(imageSrc) {
 
         if (imageSrc == "img/villa_nueva/villa_nueva_laboratorio1.webp") {
-          lab = "Cómputo";
-        } else if(imageSrc == "img/villa_nueva/villa_nueva_laboratorio2.webp") {
           lab = "Arquitectura";
+        } else if(imageSrc == "img/villa_nueva/villa_nueva_laboratorio2.webp") {
+          lab = "Cómputo";
         }
         else {
           lab = "x";
@@ -1174,6 +1172,13 @@ section a::before,section a::after{pointer-events:none;-webkit-backface-visibili
              </picture>
               <p class="service-txt">Parqueo</p>
             </div>
+            <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
+              <picture>
+               <img src="img/villa_nueva/iconos/cajero.svg" style="width: 100%;" alt="Villa Nueva">
+              </picture><br>
+              <p class="service-txt">Cajero</p>
+             </div>
+
              <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
                <img src="img/villa_nueva/iconos/biblioteca.svg" style="width: 100%;" alt="Villa Nueva">
@@ -1185,6 +1190,18 @@ section a::before,section a::after{pointer-events:none;-webkit-backface-visibili
                <img src="img/villa_nueva/iconos/cafeteria.svg" style="width: 100%;" alt="Villa Nueva">
               </picture>
                <p class="service-txt">Cafetería</p>
+             </div>
+             <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
+              <picture>
+               <img src="img/villa_nueva/iconos/laboratorios.svg" style="width: 100%;" alt="Villa Nueva">
+              </picture>
+               <p class="service-txt">Laboratorios</p>
+             </div>
+             <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
+              <picture>
+               <img src="img/villa_nueva/iconos/odontologia.svg" style="width: 100%;" alt="Villa Nueva">
+              </picture>
+               <p class="service-txt">Clínica Odontológica</p>
              </div>
              <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
               <picture>
@@ -1218,15 +1235,11 @@ section a::before,section a::after{pointer-events:none;-webkit-backface-visibili
           
           <div class="row">
             <div class="col-6 contacto_info" style="border-right: 1px solid #2c557d;">
-             <h4>Jutiapa</h4>
-             <p>Campus Universitario<br>
-             Aldea Las Crucitas, Ruta 23, Jutiapa, Jutiapa<br>
-           PBX: 7964-1100</p>
-             <p>Oficinas Administrativas <br>
-              4a. calle “B” 4-30, zona 1, Callejón Medrano, Jutiapa, Jutiapa, <br> PBX: 7844-3663, 7844-1665.<br><br> <a href="mailto:jutiapa@umg.edu.gt">jutiapa@umg.edu.gt</a></p>
+             <h4>Campus Central</h4>
+             <p>3a. Avenida 9-00 Zona 2 Interior Finca el Zapote<br> Guatemala, Guatemala.<br> PBX: (502) 2411-1800.<br><br> <a href="mailto:info@umg.edu.gt">info@umg.edu.gt</a></p>
             </div>
             <div class="col-6 contacto_info" style="padding-left: 50px;">
-             <br><p><strong>Horarios:</strong> Lunes a viernes de 08:00 a 18:00 horas. <br>Sábado de 08:00 a 17:00 horas.</p>
+             <br><p><strong>Horarios:</strong> Lunes a viernes de 07:00 a 21:00 horas. <br>Sábado de 06:00 a 17:00 horas. <br>Domingo de 07:00 a 16:00 horas.</p>
              </div>
           </div>
         </div>
