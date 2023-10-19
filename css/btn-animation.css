@@ -1,0 +1,108 @@
+.btn-animation {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-animation .btn-container {
+  --fx-animation-posY: -110px;
+
+  bottom: var(--fx-animation-posY);
+  display: flex;
+  justify-content: center;
+  transition: .5s;
+  width: 100%;
+  z-index: 3;
+}
+
+.btn-animation .btn-container .btn {
+  --fx-animation-btn-height: 56px;
+  --fx-animation-btn-transformationMatrix: matrix(0.01, 0, 0, 0.01, 0, 0);
+  --fx-animation-btn-width: 56px;
+
+  border-radius: 360px;
+  color: transparent;
+  height: var(--fx-animation-btn-height);
+  position: relative;
+  transform: var(--fx-animation-btn-transformationMatrix);
+  transition: .5s;
+  width: var(--fx-animation-btn-width);
+}
+
+.btn-animation .btn-container .btn:after {
+  background-image: url('../img/Umg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 45px;
+  position: absolute;
+  right: 4.5px;
+  top: 4.5px;
+  transition: .5s;
+  width: 45px;
+}
+
+.btn-animation.down .btn-container {
+  position: fixed;
+}
+
+.btn-animation.show .btn-container {
+  --fx-animation-posY: 30px;
+
+  position: fixed;
+  transition: bottom .5s;
+}
+
+.btn-animation.show .btn-container .btn {
+  --fx-animation-btn-transformationMatrix: matrix(1, 0, 0, 1, 0, 0);
+  --fx-animation-btn-width: 90%;
+
+  color: var(--bs-btn-color);
+  transition: transform .5s, width .5s 1.5s, color .5s 2s;
+}
+
+.btn-animation.show .btn-container .btn::after {
+  animation-name: animation-show-btn-img;
+  animation-duration: 1.5s;
+}
+
+  @keyframes animation-show-btn-img {
+    0% {
+      transform: scale(1);
+    
+    } 25% {
+      transform: scale(1.5);
+
+    } 100% {
+      transform: scale(1);
+    }
+  }
+
+.btn-animation.hide .btn-container {
+  --fx-animation-posY: 30px;
+
+  position: absolute;
+}
+
+.btn-animation.hide .btn-container .btn {
+  transition: color .5s, width .5s .5s, transform .5s 1s;
+}
+
+.btn-animation.up .btn-container {
+  --fx-animation-posY: -110px;
+
+  position: fixed;
+  transition: bottom .5s 1s;
+}
+
+.btn-animation.up .btn-container .btn {
+  transition: color .5s, width .5s .5s, transform .5s 1s;
+}
+
+@media (min-width: 576px) {
+
+  .btn-animation.show .btn-container .btn {
+    --fx-animation-btn-width: 380px;
+  }
+
+}

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Urbanist-BoldItalic";
+  src: url("../../webfont/Urbanist-BoldItalic.eot") format("embedded-opentype"),
+    url("../../webfont/Urbanist-BoldItalic.woff2") format("woff2"),
+    url("../../webfont/Urbanist-BoldItalic.woff") format("woff");
+}
+
+.ff-Urbanist-bi {
+  font-family: "Urbanist-BoldItalic";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* */
+
+.bg-info {
+  background-color: #e0fdff !important;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
+  color: #003366;
+  font-family: "Lato-LightItalic";
+}
+
+.display-1 b,
+.display-2 b,
+.display-3 b,
+.display-4 b,
+.display-5 b {
+  font-family: "Lato-BlackItalic";
+  font-weight: normal;
+}
+
+.text-blue {
+  color: #003366;
+}
+
+.text-primary {
+  color: #13709c !important;
+}
+
+@media (min-width: 576px) {
+
+  .fs-sm-5 {
+    font-size: 1.125rem !important;
+  }
+
+}
