@@ -1,0 +1,827 @@
+@font-face {
+  font-family: "White Dream";
+  src: url("../../webfont/WhiteDream.eot") format("embedded-opentype"),
+    url("../../webfont/WhiteDream.woff2") format("woff2"),
+    url("../../webfont/WhiteDream.woff") format("woff");
+}
+
+/*Banner*/
+.banner::after {
+  background: url("/img/forma-fac-carreras.svg");
+  background-position: bottom;
+  background-size: 100% 100%;
+  bottom: 0px;
+  content: "";
+  display: block;
+  height: 25px;
+  position: absolute;
+  width: 100%;
+}
+
+.link-interno .dropstart{
+   position: absolute; 
+  margin-top: 4%; 
+   margin-left: 50%;  
+}
+
+.link-interno .btn-secondary{
+  position: relative;
+  background-color: #0c7aba;
+  color: #fff;
+  margin-top: 57%;
+  border: none;
+  font-size: 130%;
+  border-radius: 20%;
+  margin-left: 3%;
+}
+
+
+.link-interno  .dropdown-menu{
+  width: 20%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+
+.link-interno .bloque-interno{
+  width: 90%;
+  margin-left: 39%;
+  padding: 14px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.link-interno .bloque-interno i{
+  margin-top: -70%;
+}
+
+
+
+@media (min-width: 576px) 
+{
+  .banner::after{
+      height: 35px;
+  }
+}
+
+@media (min-width: 992px) 
+{
+  .banner::after{
+      height: 65px;
+  }
+}
+
+/* link intererno */
+.acercaFacultad .link-interno
+{
+  float: right;
+  top: -298px;
+  text-decoration: none;
+  border-radius: 7%;
+  height: 92px;
+  margin-right: -12px;
+  z-index: 1;
+}
+
+.link-interno .btn-secondary {
+  position: relative;
+  padding: 5px;
+  background-color: #0c7aba;
+  color: #fff;
+  margin-top: 22%;
+  border: none;
+  font-size: 25px;
+  border-radius: 20%;
+}
+
+.link-interno .bloque-interno {
+  width: 82%;
+  margin-left: 20%;
+  padding: 100px;
+  border-radius: 20px 0px 0px 20px;
+  height: 25px;
+}
+
+.bloque-interno:hover {
+  background-color: #b0e9ff;
+}
+
+.link-interno .dropdown-menu {
+  width: 20%;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+
+.bloque-interno {
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  opacity: 0.7;
+  z-index: 2;
+  top: -10px;
+}
+
+.bloque-interno .bloque-lista{
+  margin-top: -38px;
+}
+
+.acercaFacultad .link-interno nav a:hover {
+  color: white;
+}
+
+.acercaFacultad .link-interno nav a {
+  color: #003365;
+  line-height: 2.2;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Lato-LightItalic";
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: -25px;
+}
+
+@media (min-width: 576px)
+{
+  .link-interno .dropstart{
+
+ }
+
+    /*Link interno*/
+  .acercaFacultad .link-interno {
+      float: right;
+      top: -550px;
+      text-decoration: none;
+      border-radius: 7%;
+      height: 92px;
+      margin-right: -12px;
+      z-index: 1;
+  }
+
+  .bloque-interno{
+      background-color: white; 
+      z-index: 2;
+      position: relative;
+      opacity: 0.7;
+      z-index: 2;
+      top: -10px;
+  }
+
+  .acercaFacultad .link-interno nav a:hover {
+      color:white;
+
+  }
+
+  .bloque-interno:hover{
+      background-color: #b0e9ff 
+  }
+
+  .acercaFacultad .link-interno nav a {
+      color: #003365;
+      line-height: 2.2;
+      text-decoration: none;
+      list-style: none;
+      font-family: "Lato-LightItalic";
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: -25px;
+    }
+  
+    .acercaFacultad .link-interno li {
+      list-style: none;
+    }
+    .link-interno .bloque-interno {
+      width: 82%;
+      margin-left: 34%;
+      padding: 100px;
+      border-radius: 20px 0px 0px 20px;
+      height: 25px;
+    }
+
+    .link-interno .bloque-interno .lista{
+      margin-left: -35px
+    }
+
+    .link-interno .dropdown-menu {
+      width: 20%;
+      background-color: transparent;
+      border: none;
+      position: relative;
+    }
+
+    .link-interno .btn-secondary {
+      position: relative;
+      padding: 5px;
+      background-color: #0c7aba;
+      color: #fff;
+      margin-top: 22%;
+      border: none;
+      font-size: 25px;
+      border-radius: 20%;
+      border-top-right-radius: 20%;
+      border-bottom-right-radius: 20%;
+    }
+
+    .acercaFacultad .bloque-interno .bloque-lista{
+      margin-top: -50px;
+    }
+  
+}
+
+@media (min-width:1200px) {
+  .acercaFacultad .link-interno{
+      top:-280px;
+      float: right;
+      text-decoration: none;
+      border-radius: 7%;
+      height: 92px;
+      margin-right: -12px;
+      z-index: 1;
+  }
+
+  .acercaFacultad .link-interno nav a {
+      font-size: 20px;
+    }
+    .link-interno .bloque-interno {
+      width: 82%;
+      margin-left: 20%;
+      padding: 100px;
+      border-radius: 20px 0px 0px 20px;
+    }
+
+    .link-interno .bloque-interno .lista{
+      margin-left: -35px
+    }
+
+    .acercaFacultad .bloque-interno .bloque-lista {
+      margin-top: -75px;
+    }
+  
+}
+
+@media (min-width: 1400px) 
+{
+ .link-interno .bloque-interno {
+      width: 82%;
+      margin-left: 34%;
+      padding: 100px;
+      border-radius: 20px 0px 0px 20px;
+      height: 305px;
+    }
+
+    .link-interno .dropdown-menu {
+      width: 20%;
+      background-color: transparent;
+      border: none;
+      position: relative;
+    }
+
+    .link-interno .btn-secondary {
+      position: relative;
+      padding: 5px;
+      background-color: #0c7aba;
+      color: #fff;
+      margin-top: 22%;
+      border: none;
+      font-size: 50px;
+      border-radius: 20%;
+      border-top-right-radius: 20%;
+      border-bottom-right-radius: 20%;
+    }
+    .acercaFacultad .bloque-interno .bloque-lista {
+     margin-top: -8px;
+    }
+    
+    .acercaFacultad .link-interno {
+      top: -410px;
+    }
+
+    .link-interno .dropstart {
+      margin-top: -5%;
+      margin-left: 34%;
+    }
+
+    .link-interno .dropstart{
+      position: fixed;
+      top: 380px;
+      right: 0;
+      width: 3%;
+      height: 10vh;
+    }
+}
+
+/*sección acerca de*/
+.acerca .display-2{
+  font-size: 22px;
+}
+.acerca h2 {
+  color: #003365;
+  font-family: "Lato-LightItalic";
+}
+
+.acerca h2 label {
+  font-family: "Lato-BlackItalic";
+}
+
+/* .acerca .historia-facultad
+{
+  background-color: rgba(237,237,237,255);
+} */
+
+.acercaFacultad .acerca .historia-facultad{
+  margin-top: 80px;
+}
+
+.acercaFacultad .acerca .historia-facultad p {
+  margin-bottom: 45px;
+  text-align: justify;
+}
+
+.acerca .box:hover{
+  background-color: #fbcf31;
+}
+
+.acerca .tittle{
+  margin-top: 45px;
+}
+
+@media (min-width:576px)
+{
+  .acerca .display-2 {
+      font-size: 40px;
+    }
+}
+
+@media (min-width:768px)
+{
+  .acerca .display-2 {
+      font-size: 53px;
+    }
+}
+
+@media (min-width:1200px)
+{
+  .parrafo-historia{
+      font-size: 19px;
+  }
+
+  .acerca .display-2{
+      font-size: 4.5rem;
+  }
+
+  .acercaFacultad .acerca .historia-facultad p{
+      margin-bottom: 100px;
+    }
+  
+}
+
+.acercaFacultad .acerca .historia-facultad{
+  margin-top: 80px;
+}
+
+@media (min-width:1400px)
+{
+  .acerca .tittle{
+      margin-top: 120px;
+    }
+
+}
+
+/*seccion img-acerca-fac*/
+.img-acerca-fac {
+  background: url("/img/acerca-ingenieria.webp") no-repeat fixed center center;
+  background-size: auto;
+  background-size: auto 100%;
+  overflow-x: clip;
+  height: 700px;
+}
+
+.img-acerca-fac{
+  background-size: cover;
+}
+
+ /*seccion mision-vision*/
+ .mision-vision .lbl-mv, .p-mv, .link-success{
+  font-family: 'Urbanist-Regular'!important;
+ }
+
+ .mision-vision .lbl-mv, .link-success
+ {
+  color: #307187 !important;
+  text-decoration: none;
+ }
+
+ .mision-vision .link-success:hover
+ {
+  color: rgba(251,206,48,255) !important;
+  font-family: 'Urbanist-Bold'!important;
+ }
+
+ .mision-vision .rright{
+  fill:#307187;
+ }
+
+ .mision-vision .p-mv{
+  text-align: justify;
+ }
+
+ .mision-vision .link2{
+  margin-top: 64px;
+ }
+
+ @media (min-width: 768px) {
+  .mision-vision .col-md-4 {
+    width: 50%;
+    font-size: 19px;
+  }
+}
+
+/* seccion metodologia */
+.estudiante-ficha .img-box {
+  background-image: url("/img/foto_alumnos_ingenieria.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 570px;
+}
+
+.estudiante-ficha h3 {
+  color: #003466;
+  font-family: "Lato-LightItalic";
+  /* font-size: 25px; */
+  line-height: 1.1;
+  text-align: center;
+}
+
+.estudiante-ficha h3 label {
+  display: block;
+  font-family: "Lato-BlackItalic";
+  font-size: 50px;
+}
+
+/* .estudiante-ficha{
+  background-color: rgba(237,237,237,255);
+} */
+
+.estudiante-ficha{
+  margin-bottom: 8px;
+}
+
+.estudiante-ficha p{
+  text-align: justify;
+}
+
+
+@media(min-width:768px)
+{
+  .estudiante-ficha h3 {
+      font-size: 35px;
+      text-align: left;
+    } 
+}
+
+@media(min-width:1200px){
+
+  .mision-vision .col-md-4 {
+      margin-left: -31px;
+    }
+
+  .estudiante-ficha p{
+      padding: 40px;
+      font-size: 19px;
+      margin-left: -16px;
+    }
+
+    .estudiante-ficha h3 {
+      font-size: 3.5rem;
+      margin-left: 26px
+    }
+    
+    .estudiante-ficha h3 label {
+      font-family: "Lato-BlackItalic";
+      font-size: 4.5rem;
+    }
+}
+
+@media(min-width:1400px){
+  .estudiante-ficha h3{
+      margin-left: 5%;
+  }
+  .estudiante-ficha p{
+      margin-left: -1%;
+  }
+} 
+    @media(min-width:1600px){
+      /* .estudiante-ficha h3{
+          margin-left: 133px;
+      }
+      .estudiante-ficha p{
+          margin-left: 89px;
+      } */
+  } 
+
+@media (min-width: 1800px) 
+{
+ .estudiante-ficha .texto {
+    margin-top: 2%;
+    margin-left: 29%;
+    width: 71%;
+    margin-bottom: 34%;
+  }
+
+  .estudiante-ficha .img-box {
+      min-height: 570px;
+      /* height: 100px; */
+
+    }
+    .estudiante-ficha{
+      /* margin-bottom: -14%; */
+    }
+
+    .estudiante-ficha h3{
+      margin-left: 27px;
+  }
+  .estudiante-ficha p{
+      margin-left: -13px;
+  }
+}
+
+
+/* seccion nuestro equipo */
+.campo{
+  margin-bottom: 30px;
+}
+
+.campo .tittle-perfil {
+  font-family: "Lato-LightItalic";
+  color: #003366;
+  margin-top: 50px;
+}
+
+.campo .subtittle-perfil {
+  font-family: "Lato-BlackItalic";
+  margin-bottom: 18px;
+  margin-top: 53px;
+  color: #003366;
+  /* font-size: 50px; */
+  margin-left: 7px;
+}
+
+
+.swiper {
+  width: 285px;
+  height: 150px;
+  overflow-y: visible;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons a {
+  display: inline-block;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+.swiper-button-next{
+  top:-38px;
+  right:0;
+  color: #003366;
+  border-radius: 100%;
+  width: 11%;
+  height: 20%;
+  font-weight: bold;
+  border: 2px solid #003366;
+}
+
+.swiper-button-prev{
+  top: -38px;
+  left: 221px;
+  border-radius: 100%;
+  width: 11%;
+  height: 20%;
+  color: #003366;
+  border: 2px solid #003366;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover{
+  border-width: 2px;
+  background-color: #003366;
+  color: white;
+}
+
+.swiper-button-prev:hover{
+  border-width: 2px;
+  background-color: #003366;
+  color: white;
+}
+
+.swiper-button-next::after{
+  font-size: 17px;
+}
+
+.swiper-button-prev::after{
+  font-size: 17px;
+}
+
+.swiper-slide p{
+  font-size: 5px;
+  text-align: justify;
+  color: #003366;
+}
+
+.tittle-swiper{
+  background-color: #22294d;
+  color: #fff;
+  /* margin-left: -69%; */
+  top:72%;
+}
+
+.tittle-swiper h2{
+  font-size: 15px;
+  font-family: 'Urbanist-Regular';
+  height: 39px;
+  width: 167px;
+  padding: 1px;
+  margin-top: 20px;
+}
+
+.subtittle-swiper{
+
+}
+
+.subtittle-swiper label{
+  color:#9f3432;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -27px;
+  margin-left: -15px;
+}
+
+.subtittle-swiper .lbl-vice{
+  margin-left: -22px;
+}
+
+
+@media (min-width: 576px) {
+  .swiper {
+    width: 516px;
+    height: 292px;
+  }
+
+  .swiper-button-prev {
+      left: 424px;
+      top: -27px;
+      width: 7%;
+      height: 12%;
+    }
+    .swiper-button-next {
+      top: -28px;
+      right: 14px;
+      width: 7%;
+      height: 12%;
+    }
+    .swiper-slide p {
+      font-size: 12px;
+    } 
+    
+    .tittle-swiper{
+      width: 241px; 
+      top:77%;
+    }
+    .subtittle-swiper{
+      top:77%;
+    }
+
+    .tittle-swiper h2{
+     margin-left: 42px;
+
+  }
+}
+
+
+@media (min-width:768px) {
+  .campo .tittle-perfil {
+      margin-top: 45px;
+    }
+    .campo .subtittle-perfil {
+      margin-top: 45px;
+    } 
+    
+    .subtittle-swiper .lbl-vice {
+      margin-left: -14px;
+    }
+}
+
+@media (min-width:1200px) {
+  .campo .tittle-perfil {
+      margin-top: 40px;
+    }
+     .swiper {
+      width: 1116px;
+      height: 617px;
+    }
+
+    .swiper-button-prev {
+      left: 88%;
+      top: -50px;
+      width: 4%;
+      height: 7%;
+    }
+
+    .swiper-button-next {
+      top: -50px;
+      right: 3%;
+      width: 4%;
+      height: 7%;
+    }
+
+    .campo .subtittle-perfil {
+      margin-top: 40px;
+    }
+
+    .swiper-slide p {
+      font-size: 16px;
+      margin-left: 60px;
+    }
+
+    .tittle-swiper {
+      width: 30%;
+      top: 67.5%;
+      margin-left: -3px;
+      height: 14%;
+    }
+    .subtittle-swiper{
+      top:81%;
+    }
+
+    .tittle-swiper h2{
+      font-size: 25px;
+      margin-top: 20px;
+      position: absolute;
+      margin-left: 55px;
+  }
+
+  .subtittle-swiper label{
+    font-size: 24px;
+    margin-top: -40px;
+    margin-left: -3%;
+    position: absolute;
+  }
+
+  .display-2 {
+      font-size: 4.5rem;
+    }
+
+    .subtittle-swiper .lbl-vice {
+      margin-left: -60px;
+    }
+}
+
+@media (min-width:1200px){
+  /* .campo .sliders{
+      margin-left: -90px;
+    } */
+
+    .tittle-swiper h2{
+      width: 275px;
+      margin-left: 24px;
+  }
+
+  .subtittle-swiper label{
+    margin-left: -70px;
+  }
+}
+
+  @media (min-width:1600px) {
+    .subtittle-swiper label {
+    margin-left: -48px;
+  }
+}
+
+
+
+
+
+
+ 
+
+
+

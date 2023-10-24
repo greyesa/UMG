@@ -7,7 +7,7 @@
 
 /*Banner*/
 .banner::after {
-    background: url("/img/forma-fac-carreras.svg");
+    background: url("../../../img/forma-fac-carreras.svg");
     background-position: bottom;
     background-size: 100% 100%;
     bottom: 0px;
@@ -17,6 +17,102 @@
     position: absolute;
     width: 100%;
   }
+
+  .link-interno .dropstart{
+     position: absolute; 
+    margin-top: 4%; 
+     margin-left: 50%;  
+  }
+
+  .link-interno .btn-secondary{
+    position: relative;
+    background-color: rgba(251,206,48,255);
+    color: #fff;
+    margin-top: 57%;
+    border: none;
+    font-size: 130%;
+    border-radius: 20%;
+    margin-left: 3%;
+  }
+
+  
+  .link-interno  .dropdown-menu{
+    width: 20%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    position: relative;
+  }
+
+  .link-interno .bloque-interno{
+    width: 90%;
+    margin-left: 39%;
+    padding: 14px;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .link-interno .bloque-interno i{
+    margin-top: -70%;
+}
+
+.estudiante-ficha li{
+  text-align: justify;
+}
+
+/**************************************************/
+.campo .team-tittle{
+  font-family: "Lato-BlackItalic";
+  color: #003366;
+  font-size: 9px;
+
+  text-align: left;
+
+}
+
+.campo .team-subtittle
+{
+  font-family: "Lato-BlackItalic";
+  color: #9f3432;
+  font-size: 9px;
+  text-align: left;
+}
+
+
+
+@media(min-width:576px){
+  
+  .campo .team-tittle{
+    font-family: "Lato-BlackItalic";
+    color: #003366;
+    font-size: 12px;
+    text-align: left;
+  
+  }
+  
+  .campo .team-subtittle
+  {
+    font-family: "Lato-BlackItalic";
+    color: #9f3432;
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+
+.campo .encabezado
+{
+  position: absolute;
+  z-index: 1;
+}
+
+.campo .sliders{
+  /* top:210px; */
+  /* top:170px; */
+  top:220px;
+  margin-bottom: 240px;
+}
+
+/************************************************************/
 
   @media (min-width: 576px) 
   {
@@ -36,7 +132,7 @@
   .acercaFacultad .link-interno
   {
     float: right;
-    top: -321px;
+    top: -298px;
     text-decoration: none;
     border-radius: 7%;
     height: 92px;
@@ -104,6 +200,10 @@
 
   @media (min-width: 576px)
   {
+    .link-interno .dropstart{
+ 
+   }
+
       /*Link interno*/
     .acercaFacultad .link-interno {
         float: right;
@@ -252,6 +352,19 @@
       .acercaFacultad .link-interno {
         top: -410px;
       }
+
+      .link-interno .dropstart {
+        margin-top: -5%;
+        margin-left: 34%;
+      }
+
+      .link-interno .dropstart{
+        position: fixed;
+        top: 380px;
+        right: 0;
+        width: 3%;
+        height: 10vh;
+      }
   }
 
   /*sección acerca de*/
@@ -267,10 +380,10 @@
     font-family: "Lato-BlackItalic";
   }
 
-  .acerca .historia-facultad
+  /* .acerca .historia-facultad
   {
     background-color: rgba(237,237,237,255);
-  }
+  } */
 
   .acercaFacultad .acerca .historia-facultad{
     margin-top: 80px;
@@ -286,7 +399,7 @@
   }
 
   .acerca .tittle{
-    margin-top: 45px;
+    margin-top: -10px;
   }
 
   @media (min-width:576px)
@@ -299,24 +412,30 @@
   @media (min-width:768px)
   {
     .acerca .display-2 {
-        font-size: 53px;
+        font-size: 26px;
+      }
+
+      .campo .display-2 {
+        font-size: 50px;
       }
   }
 
   @media (min-width:1200px)
   {
+    /* .tittle_head{
+      margin-top: -78px;
+    } */
     .parrafo-historia{
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .acerca .display-2{
-        font-size: 4.5rem;
+        font-size: 3.0rem;
     }
 
     .acercaFacultad .acerca .historia-facultad p{
         margin-bottom: 100px;
       }
-    
   }
 
   .acercaFacultad .acerca .historia-facultad{
@@ -327,18 +446,18 @@
   {
     .acerca .tittle{
         margin-top: 120px;
+        margin-top: -20px;
       }
-
   }
 
   /*seccion img-acerca-fac*/
-  .img-acerca-fac {
-    background: url("/img/docentes.webp") no-repeat fixed center center;
+  /* .img-acerca-fac {
+    background: url("../../../img/ .webp") no-repeat fixed center center;
     background-size: auto;
     background-size: auto 100%;
     overflow-x: clip;
     height: 700px;
-  }
+  } */
   
   .img-acerca-fac{
     background-size: cover;
@@ -367,7 +486,8 @@
     fill:#307187;
    }
 
-   .mision-vision .p-mv{
+   .mision-vision .p-mv,
+   .mision-vision li{
     text-align: justify;
    }
 
@@ -378,13 +498,14 @@
    @media (min-width: 768px) {
     .mision-vision .col-md-4 {
       width: 50%;
-      font-size: 17px;
+      font-size: 19px;
     }
+
   }
 
   /* seccion metodologia */
   .estudiante-ficha .img-box {
-    background-image: url("/img/alumnos-med.webp");
+    /* background-image: url("/img/alumnos-med.webp"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -402,11 +523,12 @@
 .estudiante-ficha h3 label {
     display: block;
     font-family: "Lato-BlackItalic";
-    font-size: 50px;
+    /* font-size: 45px; */
+    font-size: 31px;
   }
 
   .estudiante-ficha{
-    background-color: rgba(237,237,237,255);
+    /* background-color: rgba(237,237,237,255); */
   }
 
   .estudiante-ficha{
@@ -433,8 +555,9 @@
       }
 
     .estudiante-ficha p{
-        padding: 40px;
-        font-size: 17px;
+        /* padding: 40px; */
+        padding: 20px;
+        font-size: 19px;
         margin-left: -16px;
       }
 
@@ -501,21 +624,23 @@
   .campo .tittle-perfil {
     font-family: "Lato-LightItalic";
     color: #003366;
-    margin-top: 50px;
+    position: relative;
+    margin-top: 15px;
   }
 
   .campo .subtittle-perfil {
     font-family: "Lato-BlackItalic";
     margin-bottom: 18px;
-    margin-top: 53px;
+    position: relative;
+    margin-top: 15px;
     color: #003366;
-    /* font-size: 50px; */
     margin-left: 7px;
   }
 
 
-  .swiper {
-    width: 285px;
+  .team .swiper, .swiper_labs {
+    /* width: 280px;  */
+    width: 250px; 
     height: 150px;
     overflow-y: visible;
   }
@@ -545,38 +670,128 @@
     font-size: 13px;
   }
 
-  .swiper-button-next{
-    top:-38px;
-    right:0;
-    color: #003366;
+  .team .swiper-button-next{
+    /* top:80px; */
+    top:120px;
+    right:28px;
+    right:85;
+    /* color: #003366;  */
+    color: #bcbcbc;
     border-radius: 100%;
-    width: 11%;
+    width: 12%;
     height: 20%;
     font-weight: bold;
-    border: 2px solid #003366;
+    /* border:  3px solid #fff; */
+    border:  solid #bcbcbc;
   }
 
-  .swiper-button-prev{
-    top: -38px;
-    left: 221px;
+  .team .swiper-button-prev{
+    top: 120px; 
+    /* top:-20px; */
+    /* left: 221px; */
+    left: 12px;
     border-radius: 100%;
-    width: 11%;
-    height: 20%;
-    color: #003366;
-    border: 2px solid #003366;
+    width: 12%;
+    height: 20%; 
+    /* height: 7%; */
+    /* color: #003366; */
+    color: #bcbcbc;
+    border:  3px solid #bcbcbc;
     font-weight: bold;
   }
 
-  .swiper-button-next:hover{
-    border-width: 2px;
-    background-color: #003366;
-    color: white;
+  .team .swiper {
+    /* width: 850px; */
+    width: 250px;
+    height: 147px;
   }
 
-  .swiper-button-prev:hover{
+  .team .swiper-slide p {
+    font-size: 8px;
+  }
+
+
+  .estudiante-ficha .swiper-button-next{
+    top: 300px;
+    /* right:28px; */
+    /* color: #003366; */
+    color: #fff;
+    border-radius: 100%;
+    width: 13%;
+    height: 7%;
+    font-weight: bold;
+    border:  3px solid #fff;
+  }
+
+  .estudiante-ficha .swiper-button-prev{
+    top: 249px;
+    /* left: 249px; */
+    left: 83.5%;
+    border-radius: 100%;
+    width: 13%;
+    height: 7%; 
+    /* color: #003366; */
+    color: #fff;
+    border:  3px solid #fff;
+    font-weight: bold;
+  }
+
+  .espacios .swiper-button-next{
+    /* top: 650px;
+    left: 260px; */
+    top: 568px;
+    left: 230px; 
+    /* color: #003366; */
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    /* color: #fff;
+    border:  3px solid #000; */
+    color: #bcbcbc;
+    border:  3px solid #bcbcbc;
+  }
+
+  .espacios .swiper-button-prev{
+    top: 568px;
+    left: 188px;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px; 
+    color: #bcbcbc;
+    /* color: #fff; */
+    border:  3px solid #bcbcbc;
+
+  }
+
+
+  .team .swiper-button-next:hover, 
+  .estudiante-ficha .swiper-button-next:hover{
     border-width: 2px;
-    background-color: #003366;
-    color: white;
+    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+  }
+
+  .team .swiper-button-prev:hover, 
+  .estudiante-ficha .swiper-button-prev:hover{
+    border-width: 2px;
+    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+  }
+
+
+  .espacios .swiper-button-next:hover,
+  .team .swiper-button-next:hover  {
+    border-width: 2px;
+    background-color: rgba(255,255,255,0.5);
+    color: #8c8c8c;
+  }
+
+  .espacios .swiper-button-prev:hover,
+  .team .swiper-button-next:hover  {
+    border-width: 2px;
+    background-color: rgba(255,255,255,0.5);
+    color: #8c8c8c;
   }
 
   .swiper-button-next::after{
@@ -588,7 +803,8 @@
   }
 
   .swiper-slide p{
-    font-size: 6px;
+    /* font-size: 6px; */
+    font-size: 9px;
     text-align: justify;
     color: #003366;
   }
@@ -609,9 +825,6 @@
     margin-top: 20px;
 }
 
-.subtittle-swiper{
-
-}
 
   .subtittle-swiper label{
     color:#9f3432;
@@ -623,23 +836,18 @@
 
 
   @media (min-width: 576px) {
-    .swiper {
-      width: 516px;
-      height: 292px;
+    .team .swiper {
+      width: 440px;
+      height: 230px;
     }
 
-    .swiper-button-prev {
-        left: 424px;
-        top: -27px;
-        width: 7%;
-        height: 12%;
+    .team .swiper-button-prev {
+      width: 11%;
       }
-      .swiper-button-next {
-        top: -28px;
-        right: 14px;
-        width: 7%;
-        height: 12%;
+      .team  .swiper-button-next {
+        width: 11%;
       }
+
       .swiper-slide p {
         font-size: 12px;
       } 
@@ -654,43 +862,168 @@
 
       .tittle-swiper h2{
        margin-left: 42px;
-
     }
+
+   .estudiante-ficha .swiper-button-next{
+      /* top: 27px; */
+      top:56%;
+      /* right:210px; */
+      width: 8%;
+      height: 7%;
+    }
+  
+   .estudiante-ficha .swiper-button-prev{
+      /* top: 27px; 
+      left: 230px; */
+      top: 45%;
+      left: 90%;
+      width: 8%;
+      height: 7%; 
+    }
+
+    .espacios .swiper-button-next{
+      /* top: 620px;
+      left: 515px; */
+      top: 580px;
+      left: 515px
+    }
+
+    .espacios .swiper-button-prev{
+      top: 580px;
+      left: 474px;
+    }
+  
   }
 
 
   @media (min-width:768px) {
-    .campo .tittle-perfil {
-        margin-top: 45px;
-      }
-      .campo .subtittle-perfil {
-        margin-top: 45px;
-      }    
+    .swiper-button-prev {
+      width: 10%;
+    }
+    .swiper-button-next {
+      width: 10%;
+    }  
+
+    .swiper {
+      width: 382px;
+    }
+
+    .estudiante-ficha .swiper-button-next {
+      width: 11%;
+      height: 7%;
+      left: 85%;
+    }
+
+    .estudiante-ficha .swiper-button-prev {
+      width: 11%;
+      height: 7%;
+      left: 85%;
+    }
+
+    .espacios .swiper-button-next {
+      /* top: 624px;
+      left: 695px; */
+      width: 50px;
+      height: 50px;
+      top: 576px;
+      left: 695px;
+     
+    }
+
+    .espacios .swiper-button-prev {
+      /* left: 640px;
+      top: 624px; */
+      left: 640px;
+      top: 576px;
+      width: 50px;
+      height: 50px;
+    }
+
+  }
+
+  @media (min-width:992px) {
+
+    .estudiante-ficha .swiper-button-prev {
+      width: 11%;
+      height: 9%;
+      left: 87%;
+    }
+
+    .estudiante-ficha .swiper-button-next {
+      width: 11%;
+      height: 9%;
+      left: 87%;
+    }
+    .swiper {
+      width: 493px;
+    }
+
+    .team .swiper-slide p {
+      font-size: 13px;
+    }
+
+    .swiper-button-next::after{
+      font-size: 25px;
+      margin-left: 5px;
+    }
+  
+    .swiper-button-prev::after{
+      font-size: 25px;
+      margin-left: -3px;
+    }
+  
+
+    .team .swiper {
+      width: 387px;
+      width: 572px;
+      height: 240px;
+    }
+
+    .espacios .swiper-button-next {
+      left: 900px;
+      top: 584px;
+
+    }
+
+    .espacios .swiper-button-prev {
+      left: 847px;
+      top:584px;
+
+    }
   }
 
   @media (min-width:1200px) {
-    .campo .tittle-perfil {
-        margin-top: 40px;
-      }
-    
 
 
-      .swiper {
-        width: 1116px;
-        height: 617px;
+      .swiper, .swiper_labs {
+        /* width: 1000px;
+        height: 617px; */
+        /* width: 675px;
+        height: 601px; */
+
+        width: 100%;
+        height: 100%;
       }
 
       .swiper-button-prev {
-        left: 88%;
-        top: -50px;
+        /* left: 88%;
+        top: 90px;
         width: 4%;
+        height: 7%; */
+        left: 17.5%;
+        top: -23px;
+        width: 6%;
         height: 7%;
       }
 
       .swiper-button-next {
-        top: -50px;
+        /* top: 90px;
         right: 3%;
         width: 4%;
+        height: 7%; */
+        top: -23px;
+        right: 17.5%;
+        width: 6%;
         height: 7%;
       }
 
@@ -737,12 +1070,97 @@
         font-size: 4.5rem;
       }
 
-  }
+
+      .swiper-slide p {
+        font-size: 16px;
+        margin-left: 60px;
+      }
+    
+  
+        .campo .team-tittle{
+          font-family: "Lato-BlackItalic";
+          color: #003366;
+          font-size: 20px;
+          text-align: left;
+          margin-left: 59px
+        }
+  
+        .campo .team-subtittle
+        {
+          font-family: "Lato-BlackItalic";
+          color: #9f3432;
+          font-size: 20px;
+          text-align: left;
+        }
+    
+      .campo .tittle-perfil {
+        margin-top: 69px;
+      }
+    
+      .campo .subtittle-perfil {
+        margin-top: 69px;
+      }
+
+      .espacios .swiper-gallery{
+        margin-bottom: 125px;
+      }
+
+      .espacios .swiper-button-next {
+        /* top: 700px; */
+        top: 635px;
+        left: 93%;
+        width: 50px;
+        height: 50px;
+      }
+
+      .espacios .swiper-button-prev {
+        /* top: 700px; */
+        top: 635px;
+        left: 88.7%;
+        width: 50px;
+        height: 50px;
+      }
+    }/*fin 1200px*/
+
+      
+      .team .swiper-button-next {
+        width: 16%;
+        height: 27%;
+        left: 80.5%;
+        top:120px
+      }
+
+      .team .swiper-button-prev{
+        width: 16%;
+        height: 27%;
+        top:120px
+      }
+
+      @media (min-width:576px) {
+        .team .swiper-slide p {
+          font-size: 12px;
+        }
+
+        .team .swiper-button-prev,
+        .team .swiper-button-next {
+          width: 10%;
+          height: 19%;
+        }
+        
+      }
+
+      @media (min-width:992px) {
+        .team .swiper-button-prev,
+        .team .swiper-button-next {
+          width: 9%;
+          height: 20%;
+        } 
+      }
+
+
 
   @media (min-width:1200px){
-    .campo .sliders{
-        margin-left: -90px;
-      }
+
 
       .tittle-swiper h2{
         width: 275px;
@@ -753,8 +1171,81 @@
       margin-left: -70px;
     }
 
+    .campo .swiper-slide{
+      /* width: 1116px;  */
+      height: 410px; 
+      /* margin-right: 10px; */
+    }
+ 
+    .estudiante-ficha .swiper-button-next,
+    .estudiante-ficha .swiper-button-prev {
+     width: 50px;
+     height: 50px;
+   }
+
+   .team .swiper {
+     width: 850px; 
+    height: 147px;
   }
 
+  .team .swiper-slide p {
+    font-size: 18px;
+  }
+
+      .team .swiper-button-next {
+        width: 6%;
+        height: 33%;
+        left: 80.5%;
+      }
+
+      .team .swiper-button-prev {
+        width: 6%;
+        height: 33%;
+        left: 13.5%
+      } 
+   
+  }
+
+  @media (min-width:1400px)
+  {
+    .swiper, .swiper_labs {
+      /* width: 700px;
+      height: 780px; */
+
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-button-next {
+      width: 5%;
+      height: 18.5%;
+    }
+
+    .swiper-button-prev {
+      width: 5%;
+      height: 18.5%;
+    }
+
+    .estudiante-ficha .swiper-button-next{
+      top:52%;
+      /* top: 415px; */
+    }
+
+    }
+
+  @media (min-width:1600px) {
+    .espacios .swiper-button-prev {
+      left: 89.5%;
+    }
+  }
+      
+  @media (min-width:2000px) {
+
+    .espacios .swiper-button-prev {
+      left: 90.5%;
+    }
+  
+  }
 
 
 

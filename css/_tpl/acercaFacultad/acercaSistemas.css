@@ -3,15 +3,8 @@
   text-align: justify;
 }
 
-/* .mision-vision:hover
-{
-    background-color: #000;
-    color: #fff;
-    transition: background-color 0.3s ease;
-} */
-
   .img-acerca-fac {
-    background: url("/img/acerca-sistemas.webp") no-repeat fixed center center;
+    background: url("../../../img/acerca-sistemas.webp") no-repeat fixed center center;
     overflow-x: clip;
     height: 700px;
   }
@@ -21,18 +14,124 @@
   }
   
   /* seccion metodologia */
-  .estudiante-ficha .img-box {
-    background-image: url("/img/foto_alumnos_sistemas2.webp");
+  /* .estudiante-ficha .img-box {
+    background-image: url("/img/metolodogia-sistemas.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 570px;
+  } */
+
+
+  /****/
+
+  .estudiante-ficha .swiper {
+    background-image: url("../../../img/metolodogia-sistemas.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 570px;
   }
 
+  .swiper {
+    transition: background-image 1s ease-in-out;
+  }
+
+  .estudiante-ficha  .swiper-1 {
+    background-image: url("../../../img/metolodogia-sistemas.webp"); 
+  }
+  
+  .estudiante-ficha  .swiper-2 {
+    background-image: url("../../../img/metolodogia-sistemas.webp");
+  }
+
+  /******/
+
+
   .link-interno .btn-secondary {
     background-color: #000;
     color: #fff;
   }
+
+  .campo .team-tittle{
+    font-family: "Lato-BlackItalic";
+    color: #003366;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .campo .encabezado
+  {
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+  }
+
+  .campo .sliders{
+    /* top:290px; */
+    /* margin-bottom: 240px; */
+    margin-bottom: 350px;
+  }
+
+  @media(min-width: 768px){
+    .ps-3{
+      font-size: 19px;
+    }
+
+  }
+
+  @media(min-width: 1200px)
+  {
+    .swiper-slide p {
+      font-size: 16px;
+      margin-left: 0px;
+    }
+
+    .campo .sliders{
+      top:330px;
+    }
+
+    .campo .team-tittle{
+      font-family: "Lato-BlackItalic";
+      color: #003366;
+      font-size: 20px;
+      text-align: center;
+      margin-left: 0px
+    }
+
+    .campo .team-subtittle
+    {
+      font-family: "Lato-BlackItalic";
+      color: #9f3432;
+      font-size: 20px;
+      text-align: left;
+    }
+
+  	.campo .tittle-perfil {
+    	margin-top: 69px;
+      margin-left: -60px;
+  	}
+	
+  	.campo .subtittle-perfil {
+   	 margin-top: 69px;
+  	}
+
+    /*Posición de nuestro equipo ( texto de decano, coordinador)*/
+    .campo .swiper-slide{
+      /* height: 510px;  */
+      height: 285px; 
+    }
+
+    .mision-vision p,
+    .mision-vision .lbl-mv{
+      font-size: 19px;
+    }
+   
+
+  }
+
+  
+
 
   @media (min-width: 1400px) {
     .link-interno .btn-secondary {

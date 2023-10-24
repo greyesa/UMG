@@ -11,6 +11,15 @@
     width: 100%;
   }
 
+    /*seccion img-acerca-fac*/
+    .img-acerca-fac {
+      background: url("/img/portada-fac-acerca-de.webp") no-repeat fixed center center;
+      background-size: auto;
+      background-size: auto 100%;
+      overflow-x: clip;
+      height: 700px;
+    }
+
 
   @media (min-width: 576px) 
   {
@@ -264,10 +273,10 @@
     font-family: "Lato-BlackItalic";
   }
 
-  .acerca .historia-facultad
+  /* .acerca .historia-facultad
   {
     background-color: rgba(237,237,237,255);
-  }
+  } */
 
   .acercaFacultad .acerca .historia-facultad{
     margin-top: 80px;
@@ -303,11 +312,11 @@
   @media (min-width:1200px)
   {
     .parrafo-historia{
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .acerca .display-2{
-        font-size: 4.5rem;
+        font-size: 4.2rem;
     }
 
     .acercaFacultad .acerca .historia-facultad p{
@@ -328,20 +337,11 @@
 
   }
 
-  /*seccion img-acerca-fac*/
-  .img-acerca-fac {
-    background: url("/img/docentes.webp") no-repeat fixed center center;
-    background-size: auto;
-    background-size: auto 100%;
-    overflow-x: clip;
-    height: 700px;
-  }
+
   
   .img-acerca-fac{
     background-size: cover;
   }
-
-
 
    /*seccion mision-vision*/
    .mision-vision .lbl-mv, .p-mv, .link-success{
@@ -376,12 +376,12 @@
    @media (min-width: 768px) {
     .mision-vision .col-md-4 {
       width: 50%;
-      font-size: 17px;
+      font-size: 19px;
     }
   }
 
   /* seccion metodologia */
-  .estudiante-ficha .img-box {
+  /* .estudiante-ficha .img-box {
     background-image: url("/img/alumnos-med.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -392,7 +392,7 @@
   .estudiante-ficha h3 {
     color: #003466;
     font-family: "Lato-LightItalic";
-    /* font-size: 25px; */
+
     line-height: 1.1;
     text-align: center;
   }
@@ -413,15 +413,15 @@
 
   .estudiante-ficha p{
     text-align: justify;
-  }
+  } */
 
 
   @media(min-width:768px)
   {
-    .estudiante-ficha h3 {
+    /* .estudiante-ficha h3 {
         font-size: 35px;
         text-align: left;
-      } 
+      }  */
   }
 
   @media(min-width:1200px){
@@ -429,10 +429,10 @@
     .mision-vision .col-md-4 {
         margin-left: -31px;
       }
-
+/* 
     .estudiante-ficha p{
         padding: 40px;
-        font-size: 17px;
+        font-size: 19px;
         margin-left: -16px;
       }
 
@@ -444,16 +444,16 @@
       .estudiante-ficha h3 label {
         font-family: "Lato-BlackItalic";
         font-size: 4.5rem;
-      }
+      } */
   }
 
   @media(min-width:1400px){
-    .estudiante-ficha h3{
+    /* .estudiante-ficha h3{
         margin-left: 5%;
     }
     .estudiante-ficha p{
         margin-left: -1%;
-    }
+    } */
 } 
       @media(min-width:1600px){
         /* .estudiante-ficha h3{
@@ -466,7 +466,7 @@
 
   @media (min-width: 1800px) 
   {
-   .estudiante-ficha .texto {
+   /* .estudiante-ficha .texto {
       margin-top: 2%;
       margin-left: 29%;
       width: 71%;
@@ -475,11 +475,11 @@
 
     .estudiante-ficha .img-box {
         min-height: 570px;
-        /* height: 100px; */
+
 
       }
       .estudiante-ficha{
-        /* margin-bottom: -14%; */
+
       }
 
       .estudiante-ficha h3{
@@ -487,7 +487,7 @@
     }
     .estudiante-ficha p{
         margin-left: -13px;
-    }
+    } */
   }
 
 
@@ -599,7 +599,7 @@
   }
 
   .tittle-swiper h2{
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Urbanist-Regular';
     height: 39px;
     width: 167px;
@@ -611,6 +611,11 @@
 
 }
 
+.subtittle-swiper .lbl-subfisio{
+    margin-left: -50px;
+}
+
+
   .subtittle-swiper label{
     color:#9f3432;
     font-size: 10px;
@@ -618,6 +623,7 @@
     margin-top: -27px;
     margin-left: -15px;
 }
+
 
 
   @media (min-width: 576px) {
@@ -658,18 +664,18 @@
 
 
   @media (min-width:768px) {
-    .campo .tittle-perfil {
+    /* .campo .tittle-perfil {
         margin-top: 45px;
       }
       .campo .subtittle-perfil {
         margin-top: 45px;
-      }    
+      }     */
   }
 
   @media (min-width:1200px) {
-    .campo .tittle-perfil {
+    /* .campo .tittle-perfil {
         margin-top: 40px;
-      }
+      } */
     
 
 
@@ -692,14 +698,14 @@
         height: 7%;
       }
 
-      .campo .subtittle-perfil {
+      /* .campo .subtittle-perfil {
         margin-top: 40px;
-      }
+      } */
 
-      .swiper-slide p {
-        font-size: 22px;
+      /* .swiper-slide p {
+        font-size: 19px;
         margin-left: 60px;
-      }
+      } */
 
       .tittle-swiper {
         /* width: 33%;
@@ -707,7 +713,7 @@
         margin-left: -67%;
         height: 14%; */
         width: 30%;
-        top: 67.5%;
+        top: 68.5%;
         margin-left: -3px;
         height: 14%;
       }
@@ -737,19 +743,59 @@
 
   }
 
+ 
+
   @media (min-width:1200px){
-    .campo .sliders{
+    /* .campo .sliders{
         margin-left: -90px;
-      }
+      } */
 
       .tittle-swiper h2{
-        width: 275px;
-        margin-left: 24px;
+        width: 350px;
+        margin-left: 10px;
     }
 
     .subtittle-swiper label{
-      margin-left: -70px;
+      margin-left: -28px;
     }
+
+    .subtittle-swiper .lbl-subfisio {
+        margin-left: -118px;
+      }
+
+      .subtittle-swiper .lbl-vice{
+        margin-left: -50px;
+      }
+
+      .subtittle-swiper .lbl-secre{
+        margin-left: -50px;
+      }
+
+      .subtittle-swiper .lbl-cooNutri, 
+      .subtittle-swiper .lbl-dirEnf{
+        margin-left: -60px;
+      }
+
+      .subtittle-swiper .lbl-cooVet{
+        margin-left: -68px;
+      }
+
+      .subtittle-swiper .lbl-dirPos{
+        margin-left: -83px;
+      }
+
+      .subtittle-swiper .lbl-posEnf{
+        margin-left: -110px;
+      }
+
+      .campo .swiper-slide{
+        /* width: 1116px;  */
+        height: 410px; 
+        /* margin-right: 10px; */
+      }
+      .swiper-slide p {
+        font-size: 16px;
+      }
 
   }
 

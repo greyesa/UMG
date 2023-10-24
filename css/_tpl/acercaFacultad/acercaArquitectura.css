@@ -11,12 +11,21 @@
     width: 100%;
   }
 
+ .campo .dec-arq{
+  width: 140px;
+ }
+
 
   @media (min-width: 576px) 
   {
     .banner::after{
         height: 35px;
     }
+
+    .campo .dec-arq{
+      width: 100%;
+      font-size: 9px;
+     }
   }
   
   @media (min-width: 992px) 
@@ -94,6 +103,10 @@
     font-size: 12px;
     font-weight: bold;
     margin-left: -25px;
+  }
+
+  .team .swiper-slide p {
+    font-size: 6px;
   }
 
 
@@ -210,7 +223,6 @@
       .acercaFacultad .bloque-interno .bloque-lista {
         margin-top: -75px;
       }
-    
   }
   
   @media (min-width: 1400px) 
@@ -264,10 +276,10 @@
     font-family: "Lato-BlackItalic";
   }
 
-  .acerca .historia-facultad
+  /* .acerca .historia-facultad
   {
     background-color: rgba(237,237,237,255);
-  }
+  } */
 
   .acercaFacultad .acerca .historia-facultad{
     margin-top: 80px;
@@ -303,7 +315,7 @@
   @media (min-width:1200px)
   {
     .parrafo-historia{
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .acerca .display-2{
@@ -374,7 +386,7 @@
    @media (min-width: 768px) {
     .mision-vision .col-md-4 {
       width: 50%;
-      font-size: 17px;
+      font-size: 19px;
     }
   }
 
@@ -401,9 +413,9 @@
     font-size: 50px;
   }
 
-  .estudiante-ficha{
+  /* .estudiante-ficha{
     background-color: rgba(237,237,237,255);
-  }
+  } */
 
   .estudiante-ficha{
     margin-bottom: 8px;
@@ -430,7 +442,7 @@
 
     .estudiante-ficha p{
         padding: 40px;
-        font-size: 17px;
+        font-size: 19px;
         margin-left: -16px;
       }
 
@@ -454,12 +466,6 @@
     }
 } 
       @media(min-width:1600px){
-        /* .estudiante-ficha h3{
-            margin-left: 133px;
-        }
-        .estudiante-ficha p{
-            margin-left: 89px;
-        } */
     } 
 
   @media (min-width: 1800px) 
@@ -508,6 +514,24 @@
     /* font-size: 50px; */
     margin-left: 7px;
   }
+
+  .campo .team-tittle{
+    font-family: "Lato-BlackItalic";
+    color: #003366;
+    font-size: 5px;
+  }
+
+  .campo .encabezado
+  {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .campo .sliders{
+    top:210px;
+    margin-bottom: 240px;
+  }
+
 
 
   .swiper {
@@ -681,9 +705,6 @@
     .campo .tittle-perfil {
         margin-top: 40px;
       }
-    
-
-
       .swiper {
         width: 1116px;
         height: 617px;
@@ -707,10 +728,10 @@
         margin-top: 40px;
       }
 
-      .swiper-slide p {
-        font-size: 22px;
+      /* .swiper-slide p {
+        font-size: 19px;
         margin-left: 60px;
-      }
+      } */
 
       .tittle-swiper {
         /* width: 33%;
@@ -746,13 +767,23 @@
         font-size: 4.5rem;
       }
 
+      
+      /*Posición de nuestro equipo ( texto de decano, coordinador)*/
+      .campo .swiper-slide{
+        height: 510px; 
+     }
+
   }
 
  
-
   @media (min-width:1200px){
-    .campo .sliders{
+    /* .campo .sliders{
         margin-left: -90px;
+      } */
+
+      .campo .dec-arq {
+        width: 87%;
+        font-size: 16px;
       }
 
       .tittle-swiper h2{
@@ -792,7 +823,36 @@
       .subtittle-swiper .lbl-posEnf{
         margin-left: -110px;
       }
+      .campo .team-tittle{
+        font-family: "Lato-BlackItalic";
+        color: #003366;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 59px
+      }
 
+      .campo .team-subtittle
+      {
+        font-family: "Lato-BlackItalic";
+        color: #9f3432;
+        font-size: 20px;
+        text-align: left;
+      }
+
+      .campo .tittle-perfil {
+        margin-top: 69px;
+      }
+    
+      .campo .subtittle-perfil {
+        margin-top: 69px;
+      }
+
+      .swiper-slide p {
+        font-size: 16px;
+      }
+
+
+      
   }
 
 

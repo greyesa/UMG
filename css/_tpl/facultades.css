@@ -5,8 +5,22 @@
       url("../../webfont/WhiteDream.woff") format("woff");
   }
 
+
+  .modal-backdrop {
+    z-index: 2;
+    position: absolute;
+  }
+
+  .navbar {
+  z-index: 1;
+  }
+
+  .btn-container  {
+    z-index: 1;
+  }
+
   .acreditacion::after {
-    background: url("../../img/acreditacion.svg");
+    background: url("../../img/.svg");
     background-position: bottom;
     background-size: 100% 100%;
     bottom: -15px;
@@ -20,7 +34,7 @@
   }
 
   .banner::after {
-    background: url("../../img/forma-fac-carreras.svg");
+    background: url("/img/forma-fac-carreras.svg");
     background-position: bottom;
     background-size: 100% 100%;
     bottom: 0px;
@@ -39,6 +53,23 @@
 
     width: 100%; 
   }
+
+  .blockquote p, .card-body {
+    text-align: justify;
+  }
+
+  @media (min-width: 1200px) {
+    .decano p {
+      font-size: 22px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .decano p {
+      font-size: 26px;
+    }
+  }
+
 
 
   .banner-titulo .txt-admisiones{
@@ -115,13 +146,15 @@
 
   .facultad .link-interno {
     float: right;
-    top: -298px;
+    /* top: -298px; */
+    top: -82px;
     text-decoration: none;
     border-radius: 7%;
     height: 92px;
     width: 96px;
     z-index: 1;
   }
+
 
   .bloque-interno{
     background-color: white; 
@@ -157,6 +190,8 @@
     list-style: none;
   }
 
+
+
   .carreras{
     margin-bottom: 4%;
   }
@@ -172,13 +207,15 @@
   .carreras h1 {
     border-bottom: 2px solid;
     color: #003366;
-    font-family: "Lato-BlackItalic";
+    /* font-family: "Lato-BlackItalic"; */
+    font-family: "Lato-LightItalic";
   }
 
   .carreras h1 label {
     display: block;
     font-size: 28px;
-    font-family: "Lato-LightItalic";
+    /* font-family: "Lato-LightItalic"; */
+    font-family: "Lato-BlackItalic";
     margin-bottom: 18px;
   }
 
@@ -192,6 +229,13 @@
   
   .carreras h4 {
     color: #277892;
+    font-family: "Urbanist-Bold";
+    font-size: 18px;
+  }
+
+  .carreras h5 {
+    /* color: #277892; */
+    color:#000;
     font-family: "Urbanist-Bold";
     font-size: 18px;
   }
@@ -249,7 +293,7 @@
   }
 
    .estudiante-ficha .img-box{
-    background-image: url("../../img/foto_alumnos.webp");
+    background-image: url("/img/foto_alumnos.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -314,7 +358,7 @@
   }
 
   .acerca::after {
-    background: #cacaca;
+    /* background: #cacaca; */
     content: "";
     display: block;
     height: 50%;;
@@ -326,7 +370,8 @@
   
   .acerca h2 {
     color: #003365;
-    font-family: "Lato-LightItalic";margin-top: 6%;
+    font-family: "Lato-LightItalic";
+    /* margin-top: 6%; */
   }
   
   .acerca h2 label {
@@ -335,9 +380,10 @@
   
   .acerca video {
     width: 100%;
+    border-radius: 25px;
   }
   
-  .acerca .btn-info {
+  /* .acerca .btn-info {
     background-color: #5dc4e7;
     border-radius: 15px;
     color: #fff;
@@ -346,6 +392,38 @@
     text-transform: uppercase;
     font-family: "Urbanist-Bold";
     font-size: 18px;
+  } */
+
+  .acerca .btn-info,
+  .decano .btn-info {
+    background-color: #ebeaea;
+    border-radius: 35px;
+    color: #8c8c8d;
+    /* font-weight: bold; */
+    letter-spacing: 0.3px;
+    /* text-transform: uppercase; */
+    font-family: "Urbanist-Bold";
+    /* font-size: 18px; */
+    border-color: #ebeaea;
+    width: 100%;
+  }
+
+  .acerca .btn-info img,
+  .decano .btn-info img {
+    width: 11%; 
+    /* font-size: 44px; */
+  }
+
+  .team{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-team
+  {
+    display: flex;
+    justify-content: center;
   }
 
   /*Proyectos*/
@@ -433,7 +511,6 @@
       border: none;
       font-size: 130%;
       border-radius: 20%;
-      /* margin-left: 11%; */
       margin-left: 3%;
     }
 
@@ -455,6 +532,17 @@
     .link-interno .bloque-interno i{
       margin-top: -70%;
   }
+
+  section.estudiante-ficha .texto {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+
+
+
+
+
     
 
   
@@ -462,9 +550,9 @@
   /*576*/
   @media (min-width: 576px) 
   {
-    .link-interno .dropstart {
-      /* margin-top: -52%;
-      margin-left: 38%; */
+    .acerca .btn-info,
+    .team .btn-info {
+      width: 70%;
     }
 
     .link-interno .bloque-interno {
@@ -709,6 +797,11 @@
       font-size: 25px;
     }
 
+    .acerca .btn-info,
+    .team .btn-info {
+      width: 45%;
+    }
+
 
 
   } /*Fin 768px*/
@@ -911,8 +1004,9 @@
       font-size: 78px;
     }
 
-    .carreras h4 {
-      font-size: 26px;
+    .carreras h4, 
+    .carreras h5 {
+      font-size: 22px;
     }
 
     .carreras ul{
@@ -975,8 +1069,22 @@
       font-size: 30px;
     }
 
+    .decano p {
+      font-size: 19px;
+    }
 
-    /
+
+    .acerca .btn-info,
+    .team .btn-info {
+      width: 35%;
+    }
+  
+    /* .acerca .btn-info img {
+      width: 11%;
+    } */
+
+
+
   }/*fin 1200*/
 
     /*1400*/
@@ -1030,9 +1138,6 @@
       }
 
       .link-interno .dropstart{
-        /* position: absolute;
-        margin-top: -138%;
-        margin-left: 34%; */
         position: fixed;
         top: 380px;
         right: 0;
@@ -1047,8 +1152,6 @@
         background-color: transparent;
         border: none;
         position: relative;
-
-
       }
 
       .link-interno .bloque-interno{
@@ -1089,9 +1192,16 @@
       font-size: 35px;
     }
 
+    .acerca .btn-info, 
+    .team .btn-info {
+      width: 30%;
+      width: 11%;
+    }
+
   }
 
-  @media (min-width: 1800px) {
+  @media (min-width: 1800px) 
+  {
     section.estudiante-ficha {
       font-size: 20px;
     }
@@ -1106,8 +1216,9 @@
     }
 
     .decano p {
-      font-size: 26px;
+      font-size: 19px;
     }
+
     section.estudiante-ficha .btn-info {
       margin-left: 44px;
     }
