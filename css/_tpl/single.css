@@ -11,6 +11,18 @@
   font-weight: normal;
 }
 
+article {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+article p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* */
 
 .bg-info {
