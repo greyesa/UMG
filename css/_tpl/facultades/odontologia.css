@@ -704,6 +704,8 @@
       section.estudiante-ficha .btn-info {
         margin-left: 44px;
       }
+
+
       section.s h5 {
         font-size: 30px;
       }
@@ -870,7 +872,7 @@
   
       section.estudiante-ficha h3 {
         font-size: 53px;
-        margin-top: 145px;
+        margin-top: 430px;
       }
   
       section.estudiante-ficha h3 label {
@@ -882,14 +884,14 @@
       }
   
       section.estudiante-ficha .texto {
-        margin-top: 2%;
+        margin-top: -40%;
         margin-left: 8%;
         width: 71%;
         margin-bottom: 34%;
       }
-      section.estudiante-ficha .btn-info {
-        margin-left: 116px;
-      }
+
+
+     
 
       .link-interno .dropstart {
         position: fixed;
