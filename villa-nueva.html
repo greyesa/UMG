@@ -1081,39 +1081,39 @@
           <div class="carousel-item active">
             <div class="row">
               <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria1.webp" class="d-block w-100" alt="Imagen 1" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria1.webp')">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria1.webp" class="d-block w-100" alt="Imagen 1" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria1.webp')">
               </div>
               <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria2.webp" class="d-block w-100" alt="Imagen 2" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria2.webp')">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria2.webp" class="d-block w-100" alt="Imagen 2" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria2.webp')">
               </div>
               <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria3.webp" class="d-block w-100" alt="Imagen 3" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria3.webp')">
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria4.webp" class="d-block w-100" alt="Imagen 1" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria4.webp')">
-              </div>
-              <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria5.webp" class="d-block w-100" alt="Imagen 2" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria5.webp')">
-              </div>
-              <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria6.webp" class="d-block w-100" alt="Imagen 3" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria6.webp')">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria3.webp" class="d-block w-100" alt="Imagen 3" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria3.webp')">
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
               <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria9.webp" class="d-block w-100" alt="Imagen 1" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria9.webp')">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria4.webp" class="d-block w-100" alt="Imagen 1" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria4.webp')">
               </div>
               <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria10.webp" class="d-block w-100" alt="Imagen 2" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria10.webp')">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria5.webp" class="d-block w-100" alt="Imagen 2" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria5.webp')">
               </div>
               <div class="col">
-                <img src="img/villa_nueva/galeria/villa_nueva_galeria11.webp" class="d-block w-100" alt="Imagen 3" onclick="showFullScreen('img/villa_nueva/galeria/villa_nueva_galeria11.webp')">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria6.webp" class="d-block w-100" alt="Imagen 3" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria6.webp')">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria9.webp" class="d-block w-100" alt="Imagen 1" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria9.webp')">
+              </div>
+              <div class="col">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria10.webp" class="d-block w-100" alt="Imagen 2" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria10.webp')">
+              </div>
+              <div class="col">
+                <img src="img/villa_nueva/galeria/villa_nueva_galeria11.webp" class="d-block w-100" alt="Imagen 3" onclick="showFullScreen('modalgaleria','img/villa_nueva/galeria/villa_nueva_galeria11.webp')">
               </div>
             </div>
           </div>
@@ -1137,7 +1137,7 @@
 </section>
 
     <script>
-      function showFullScreen(imageSrc) {
+      function showFullScreen(id, imageSrc) {
 
         if (imageSrc == "img/villa_nueva/galeria/villa_nueva_galeria1.webp") {
           lab = "Instalaciones del Campus Universitario de Villa Nueva, Universidad Mariano Gálvez de Guatemala";
@@ -1173,7 +1173,7 @@
         }
 
         const modal = `
-          <div class="modal" tabindex="-1" role="dialog">
+          <div id="${id}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">  
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
               <div class="modal-content">
                 <div class="modal-body">
@@ -1185,7 +1185,7 @@
           </div>
         `;
         document.body.insertAdjacentHTML('beforeend', modal);
-        const modalElement = document.querySelector('.modal');
+        const modalElement = document.querySelector(`#${id}`);
         const bootstrapModal = new bootstrap.Modal(modalElement);
         bootstrapModal.show();
         modalElement.addEventListener('hidden.bs.modal', function () {
@@ -1209,7 +1209,7 @@
           
           <div class="row">
             <div class="col-3 offset-2 col-md-3 offset-md-0 col-lg-1 icons_service icon-container">
-             <a  href="#parqueo" data-keyboard="true"  data-bs-toggle="modal">
+             <a href="#parqueo" data-keyboard="true" data-bs-toggle="modal" data-bs-target="#parqueo">
               <picture>
               <img src="img/villa_nueva/iconos/parqueo.svg" style="width: 100%;" alt="Villa Nueva">
              </picture>
@@ -1218,7 +1218,7 @@
             </div>
 
             <!-- Modal HTML -->
-            <div id="parqueo" class="modal fade" tabindex='-1'>
+            <div id="parqueo" class="modal fade" tabindex='-1' aria-labelledby="parqueo" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
