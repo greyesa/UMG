@@ -48,7 +48,7 @@
 
 .btn-animation.show .btn-container {
   --fx-animation-posY: 30px;
-
+  left: 0px;
   position: fixed;
   transition: bottom .5s;
 }

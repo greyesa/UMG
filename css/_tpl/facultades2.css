@@ -5,6 +5,20 @@
       url("../../webfont/WhiteDream.woff") format("woff");
   }
 
+
+  .modal-backdrop {
+    z-index: 2;
+    position: absolute;
+  }
+
+  .navbar {
+  z-index: 1;
+  }
+
+  .btn-container  {
+    z-index: 1;
+  }
+
   .acreditacion::after {
     background: url("../../img/.svg");
     background-position: bottom;
@@ -44,19 +58,6 @@
     text-align: justify;
   }
 
-  .modal-backdrop {
-    z-index: 2;
-    position: absolute;
-  }
-
-  /* .navbar {
-  z-index: 1;
-  } */
-
-  .btn-container  {
-    z-index: 1;
-  }
-
   @media (min-width: 1200px) {
     .decano p {
       font-size: 22px;
@@ -68,6 +69,7 @@
       font-size: 26px;
     }
   }
+
 
 
   .banner-titulo .txt-admisiones{
@@ -187,6 +189,7 @@
   .facultad .link-interno li {
     list-style: none;
   }
+
 
 
   .carreras{
