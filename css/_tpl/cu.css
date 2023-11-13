@@ -788,6 +788,10 @@ h5 label {
   width: 90% !important;
 }
 
+.modal-title {
+ text-align: left;
+}
+
 
 
   .carreras h2 {
