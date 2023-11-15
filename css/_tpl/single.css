@@ -36,6 +36,8 @@ article p {
 .display-5 {
   color: #003366;
   font-family: "Lato-LightItalic";
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .display-1 b,
