@@ -19,6 +19,11 @@
     margin-left: 65%;
   }
 
+  .Carrera--find h5 {
+
+    color: #fff;
+}
+
   .banner::after {
     background: url("/img/forma-fac-carreras.svg");
     background-position: bottom;

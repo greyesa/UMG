@@ -1,0 +1,78 @@
+.Carrera--find {
+  background: #003067;
+}
+
+.Carrera--find h2 {
+  color: #07b9f7 !important;
+}
+
+.Carrera--find h5 {
+  font-family: "Urbanist-Bold";
+  font-weight: normal;
+  color: #fff;
+}
+
+.Carrera--find .form-label {
+  font-family: "Urbanist-Bold";
+}
+
+.Carrera--find .Carrera {
+  border-top: 2px solid #0585c1;
+}
+
+.Carrera--find .Carrera .prop.nombre {
+  color: #f7cc0a;
+  font-family: "Lato-LightItalic";
+}
+
+.Carrera--find .Carrera .prop.nombre dt {
+  font-weight: normal;
+}
+
+.Carrera--find .Carrera .prop.nombre dd {
+  font-family: "Lato-BlackItalic";
+}
+
+.Carrera--find .Carrera .prop:not(.nombre) {
+  border-left: 3px solid #f7cc0a;
+}
+
+.Carrera--find .Carrera .prop:not(.nombre) dt {
+  font-family: "Lato-BlackItalic";
+  font-weight: normal;
+}
+
+.Carrera--find .Carrera .prop:not(.nombre) dd {
+  font-size: 1.12rem;
+}
+
+.Carrera--find .Carrera .contacto label {
+  color: #00a2ff;
+  font-family: "Urbanist-Bold";
+}
+
+.Carrera--find .Carrera .contacto .Carrera_nombre,
+.Carrera--find .Carrera .contacto .Jornada_nombre {
+  color: #f7cc0a;
+  font-family: "Urbanist-Bold";
+}
+
+.Carrera--find .Carrera .contacto .coordinador {
+  color: #00a2ff;
+}
+
+@media (min-width: 768px) {
+
+  .Carrera--find .Carrera .prop:not(.nombre) dt {
+    font-size: 1.05rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .Carrera--find .Carrera--find h2 {
+    text-align: right;
+  }
+
+}
