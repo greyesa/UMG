@@ -1,4 +1,0 @@
-AuthType Basic 
-AuthName "My Protected Website" 
-AuthUserFile /var/www/html/UMG/.htpasswd 
-require valid-user
